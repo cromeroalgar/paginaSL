@@ -25,7 +25,6 @@
         color: #fff;
         padding: 5px;
         margin-top: 30px;
-        margin-left: 60px; /* Utilizamos un porcentaje para el padding */
         font-size: 70px; /* Utilizamos un porcentaje para el tamaño de fuente */
         z-index: 1;
         background-color: transparent;
@@ -330,7 +329,7 @@
       .texto-superpuesto {
         position: absolute;
         top: 30%;
-        left: 27%;
+        left: 10%;
         transform: translate(-50%, -50%);
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
