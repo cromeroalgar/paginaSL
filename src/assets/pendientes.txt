@@ -1,0 +1,14 @@
+
+
+links footer
+boton resear carrito
+cambiar mensajes de los toast
+imagenes carrusel
+utilizar el end point de departamentos y ciudades
+faltan algunas validaciones formularios
+
+/////////////////////////////
+formulario sugerencias
+letrerito haz agregado dos productos, en pop pup resumen carrito
+
+
