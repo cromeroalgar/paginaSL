@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -7,22 +8,58 @@ import { Router } from '@angular/router';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  constructor(private router: Router){}
 
-  estado = 0;
+  whatsapp: boolean = true;
+  whatsappColor: boolean = false;
 
-  cambiarPestanha(pestanha: number) {
-    this.estado = pestanha;
+  instagram: boolean = true;
+  instagramColor: boolean = false;
+
+  facebook: boolean = true;
+  facebookColor: boolean = false;
+
+  link: boolean = true;
+  linkColor: boolean = false;
+ 
+  cambiarW(){
+    this.whatsapp = false;
+    this.whatsappColor = true;
   }
 
-  goToCheckout(): void {
-    this.router.navigate(['/checkout']);
+  cambiarWBlanco(){
+    this.whatsapp = true;
+    this.whatsappColor = false;
   }
 
 
+  cambiarI(){
+    this.instagram = false;
+    this.instagramColor = true;
+  }
 
-  irCarritoServicios(): void {
-    this.router.navigate(['/checkout-servicios']);
+  cambiarIBlanco(){
+    this.instagram = true;
+    this.instagramColor = false;
+  }
+
+  cambiarF(){
+    this.facebook = false;
+    this.facebookColor = true;
+  }
+
+  cambiarFBlanco(){
+    this.facebook = true;
+    this.facebookColor = false;
+  }
+
+  cambiarL(){
+    this.link = false;
+    this.linkColor = true;
+  }
+
+  cambiarLBlanco(){
+    this.link = true;
+    this.linkColor = false;
   }
 
 

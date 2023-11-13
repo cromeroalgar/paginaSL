@@ -17,10 +17,14 @@
 
                   
                     <br>
-                    <img src="assets/imagenes/iconos/whatsapp.svg" style="width: 40px; margin-left: 20px;" alt="">
-                    <img src="assets/imagenes/iconos/instagram.svg" style="width: 40px; margin-left: 20px;" alt="">
-                    <img src="assets/imagenes/iconos/facebook.svg" style="width: 40px; height: 40px; margin-left: 20px;" alt="">
-                    <img src="assets/imagenes/iconos/link.svg" style="width: 40px; margin-left: 20px;" alt="">
+                    <img *ngIf="whatsapp" src="assets/imagenes/iconos/whatsapp.svg" (mouseover)="cambiarW()"  style="width: 40px; margin-left: 20px;cursor: pointer;" alt="">
+                    <img *ngIf="whatsappColor" src="assets/imagenes/iconos/whatsappColor.svg" (mouseout)="cambiarWBlanco()" style="width: 40px; margin-left: 20px; cursor: pointer;" alt="">
+                    <img *ngIf="instagram" src="assets/imagenes/iconos/instagram.svg" (mouseover)="cambiarI()" style="cursor: pointer;width: 40px; margin-left: 20px;" alt="">
+                    <img *ngIf="instagramColor" src="assets/imagenes/iconos/instagramColor.svg" (mouseout)="cambiarIBlanco()" style="cursor: pointer;width: 40px; margin-left: 20px;" alt="">
+                    <img *ngIf="facebook" src="assets/imagenes/iconos/facebook.svg" (mouseover)="cambiarF()" style="cursor: pointer;width: 40px; height: 40px; margin-left: 20px;" alt="">
+                    <img *ngIf="facebookColor" src="assets/imagenes/iconos/facebookColor.svg" (mouseout)="cambiarFBlanco()" style="cursor: pointer;width: 40px; height: 40px; margin-left: 20px;" alt="">                
+                    <img *ngIf="link" src="assets/imagenes/iconos/link.svg" (mouseover)="cambiarL()" style="width: 40px; margin-left: 20px;" alt="">
+                    <img *ngIf="linkColor" src="assets/imagenes/iconos/linkColor.svg" (mouseout)="cambiarLBlanco()" style="cursor: pointer;width: 40px; margin-left: 20px;" alt="">
 
                     <br>
                     <br>
