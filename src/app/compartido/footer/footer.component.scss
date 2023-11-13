@@ -1,3 +1,20 @@
+.texto-superpuesto {
+  position: absolute;
+  top: 30%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 300px;
+  padding: 5px;
+  margin-top: -30px;
+  margin-left: 15px;
+  font-size: 70px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 1;
+  background-color: transparent;
+  text-align: left;
+}
+
 @media (max-width: 576px) {
   footer .l_oscura {
     padding-bottom: 30px;
