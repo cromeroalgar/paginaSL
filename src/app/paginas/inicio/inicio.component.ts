@@ -216,7 +216,7 @@ export class InicioComponent implements OnInit {
     const animationContainer12 = document.getElementById('mexico');
 
     if (animationContainer12) {
-      const animation12 = lottie.loadAnimation({ container: animationContainer12, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/mexicoSalvadorPeru.json' });
+      const animation12 = lottie.loadAnimation({ container: animationContainer12, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/iconorojo.json' });
       animation12.addEventListener('DOMLoaded', () => {
       });
 
@@ -285,7 +285,7 @@ export class InicioComponent implements OnInit {
     const animationContainer18 = document.getElementById('dominicana');
 
     if (animationContainer18) {
-      const animation18 = lottie.loadAnimation({ container: animationContainer18, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/DominicanaGuatemala.json' });
+      const animation18 = lottie.loadAnimation({ container: animationContainer18, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/mexicoSalvadorPeru.json' });
       animation18.addEventListener('DOMLoaded', () => {
       });
 
@@ -307,7 +307,7 @@ export class InicioComponent implements OnInit {
     const animationContainer20 = document.getElementById('chile');
 
     if (animationContainer20) {
-      const animation20 = lottie.loadAnimation({ container: animationContainer20, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/DominicanaGuatemala.json' });
+      const animation20 = lottie.loadAnimation({ container: animationContainer20, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/iconorojo.json' });
       animation20.addEventListener('DOMLoaded', () => {
       });
 
@@ -319,7 +319,7 @@ export class InicioComponent implements OnInit {
     const animationContainer21 = document.getElementById('honduras');
 
     if (animationContainer21) {
-      const animation21 = lottie.loadAnimation({ container: animationContainer21, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/DominicanaGuatemala.json' });
+      const animation21 = lottie.loadAnimation({ container: animationContainer21, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/iconorojo.json' });
       animation21.addEventListener('DOMLoaded', () => {
       });
 
