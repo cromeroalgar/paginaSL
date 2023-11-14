@@ -211,16 +211,7 @@ export class InicioComponent implements OnInit {
 
     }
 
-    const animationContainer11 = document.getElementById('ecuador');
 
-    if (animationContainer11) {
-      const animation11 = lottie.loadAnimation({ container: animationContainer11, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/colombia.json' });
-      animation11.addEventListener('DOMLoaded', () => {
-      });
-
-      animation11.setSpeed(0.2);
-
-    }
 
     const animationContainer12 = document.getElementById('mexico');
 
@@ -299,6 +290,40 @@ export class InicioComponent implements OnInit {
       });
 
       animation18.setSpeed(0.2);
+
+    }
+
+    const animationContainer19 = document.getElementById('ecuador');
+
+    if (animationContainer19) {
+      const animation19 = lottie.loadAnimation({ container: animationContainer19, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/DominicanaGuatemala.json' });
+      animation19.addEventListener('DOMLoaded', () => {
+      });
+
+      animation19.setSpeed(0.2);
+
+    }
+
+    const animationContainer20 = document.getElementById('chile');
+
+    if (animationContainer20) {
+      const animation20 = lottie.loadAnimation({ container: animationContainer20, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/DominicanaGuatemala.json' });
+      animation20.addEventListener('DOMLoaded', () => {
+      });
+
+      animation20.setSpeed(0.2);
+
+    }
+
+
+    const animationContainer21 = document.getElementById('honduras');
+
+    if (animationContainer21) {
+      const animation21 = lottie.loadAnimation({ container: animationContainer21, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/DominicanaGuatemala.json' });
+      animation21.addEventListener('DOMLoaded', () => {
+      });
+
+      animation21.setSpeed(0.2);
 
     }
 
