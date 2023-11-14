@@ -328,6 +328,15 @@ export class InicioComponent implements OnInit {
     }
 
 
+    const animationContainer22 = document.getElementById('ivisibleBanner');
+  
+    if (animationContainer22) {
+      const animation22 = lottie.loadAnimation({ container: animationContainer22, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/invisiblebanner.json' });
+      animation22.addEventListener('DOMLoaded', () => {
+      });
+    }
+
+
 
 
   }
