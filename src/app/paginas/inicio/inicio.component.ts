@@ -4,7 +4,8 @@ import { FormBuilder } from '@angular/forms';
 import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
 
 import { Router } from '@angular/router';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
+import lottie from 'lottie-web';
 
 
 @Component({
@@ -111,6 +112,37 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(): void {    
 
+    const animationContainer = document.getElementById('cerebro');
+  
+    if (animationContainer) {
+      const animation1 = lottie.loadAnimation({ container: animationContainer, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/cerebrito.json' });
+      animation1.addEventListener('DOMLoaded', () => {
+      });
+    }
+
+    const animationContainer2 = document.getElementById('ojo');
+  
+    if (animationContainer2) {
+      const animation2 = lottie.loadAnimation({ container: animationContainer2, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/ojos.json' });
+      animation2.addEventListener('DOMLoaded', () => {
+      });
+    }
+
+    const animationContainer3 = document.getElementById('flecha');
+
+    if (animationContainer3) {
+      const animation3 = lottie.loadAnimation({ container: animationContainer3, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/flecha.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+    }
+
+    const animationContainer4 = document.getElementById('lineach');
+
+    if (animationContainer4) {
+      const animation4 = lottie.loadAnimation({ container: animationContainer4, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/lineapeque.json' });
+      animation4.addEventListener('DOMLoaded', () => {
+      });
+    }
 
   }
 
