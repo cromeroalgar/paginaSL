@@ -104,7 +104,7 @@
       font-size: 12px; /* Utilizamos un porcentaje para el tamaño de fuente */
       z-index: 1;
       background-color: transparent;
-      text-align: left;
+      text-align: center;
   }
 
   .texto-ecuador {
@@ -136,7 +136,23 @@
   font-size: 12px; /* Utilizamos un porcentaje para el tamaño de fuente */
   z-index: 1;
   background-color: transparent;
-  text-align: left;
+  text-align: center;
+}
+
+.texto-salvador {
+  position: absolute;
+  top: 18%;
+  left: 57.2%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  
+  margin-top: 10px;
+  margin-left: 5px; /* Utilizamos un porcentaje para el padding */
+  font-size: 12px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 1;
+  background-color: transparent;
+  text-align: center;
 }
 
 
@@ -153,7 +169,7 @@
   font-size: 12px; /* Utilizamos un porcentaje para el tamaño de fuente */
   z-index: 1;
   background-color: transparent;
-  text-align: left;
+  text-align: center;
 }
 
 

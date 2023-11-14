@@ -200,6 +200,108 @@ export class InicioComponent implements OnInit {
 
     }
 
+    const animationContainer10 = document.getElementById('colombia');
+
+    if (animationContainer10) {
+      const animation10 = lottie.loadAnimation({ container: animationContainer10, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/colombia.json' });
+      animation10.addEventListener('DOMLoaded', () => {
+      });
+
+      animation10.setSpeed(0.2);
+
+    }
+
+    const animationContainer11 = document.getElementById('ecuador');
+
+    if (animationContainer11) {
+      const animation11 = lottie.loadAnimation({ container: animationContainer11, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/colombia.json' });
+      animation11.addEventListener('DOMLoaded', () => {
+      });
+
+      animation11.setSpeed(0.2);
+
+    }
+
+    const animationContainer12 = document.getElementById('mexico');
+
+    if (animationContainer12) {
+      const animation12 = lottie.loadAnimation({ container: animationContainer12, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/mexicoSalvadorPeru.json' });
+      animation12.addEventListener('DOMLoaded', () => {
+      });
+
+      animation12.setSpeed(0.2);
+
+    }
+
+    const animationContainer13 = document.getElementById('salvador');
+
+    if (animationContainer13) {
+      const animation13 = lottie.loadAnimation({ container: animationContainer13, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/mexicoSalvadorPeru.json' });
+      animation13.addEventListener('DOMLoaded', () => {
+      });
+
+      animation13.setSpeed(0.2);
+
+    }
+
+    const animationContainer14 = document.getElementById('peru');
+
+    if (animationContainer14) {
+      const animation14 = lottie.loadAnimation({ container: animationContainer14, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/mexicoSalvadorPeru.json' });
+      animation14.addEventListener('DOMLoaded', () => {
+      });
+
+      animation14.setSpeed(0.2);
+
+    }
+
+    const animationContainer15 = document.getElementById('argentina');
+
+    if (animationContainer15) {
+      const animation15 = lottie.loadAnimation({ container: animationContainer15, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/panamaArgentina.json' });
+      animation15.addEventListener('DOMLoaded', () => {
+      });
+
+      animation15.setSpeed(0.2);
+
+    }
+
+    const animationContainer16 = document.getElementById('panama');
+
+    if (animationContainer16) {
+      const animation16 = lottie.loadAnimation({ container: animationContainer16, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/panamaArgentina.json' });
+      animation16.addEventListener('DOMLoaded', () => {
+      });
+
+      animation16.setSpeed(0.2);
+
+    }
+
+
+    const animationContainer17 = document.getElementById('guatemala');
+
+    if (animationContainer17) {
+      const animation17 = lottie.loadAnimation({ container: animationContainer17, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/DominicanaGuatemala.json' });
+      animation17.addEventListener('DOMLoaded', () => {
+      });
+
+      animation17.setSpeed(0.2);
+
+    }
+
+
+    
+    const animationContainer18 = document.getElementById('dominicana');
+
+    if (animationContainer18) {
+      const animation18 = lottie.loadAnimation({ container: animationContainer18, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/DominicanaGuatemala.json' });
+      animation18.addEventListener('DOMLoaded', () => {
+      });
+
+      animation18.setSpeed(0.2);
+
+    }
+
 
 
 
