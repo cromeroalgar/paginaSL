@@ -142,7 +142,33 @@ export class InicioComponent implements OnInit {
       const animation4 = lottie.loadAnimation({ container: animationContainer4, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/lineapeque.json' });
       animation4.addEventListener('DOMLoaded', () => {
       });
+
+      animation4.setSpeed(0.2);
     }
+
+    const animationContainer5 = document.getElementById('lineaTexto');
+
+    if (animationContainer5) {
+      const animation5 = lottie.loadAnimation({ container: animationContainer5, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/lineaTexto.json' });
+      animation5.addEventListener('DOMLoaded', () => {
+      });
+
+      animation5.setSpeed(0.2);
+    }
+
+    const animationContainer6 = document.getElementById('lineaTexto2');
+
+    if (animationContainer6) {
+      const animation6 = lottie.loadAnimation({ container: animationContainer6, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/lineaTexto.json' });
+      animation6.addEventListener('DOMLoaded', () => {
+      });
+
+      animation6.setSpeed(0.2);
+
+    }
+
+
+
 
   }
 
