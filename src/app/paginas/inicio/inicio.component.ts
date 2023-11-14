@@ -167,6 +167,17 @@ export class InicioComponent implements OnInit {
 
     }
 
+    const animationContainer7 = document.getElementById('lineaTexto3');
+
+    if (animationContainer7) {
+      const animation7 = lottie.loadAnimation({ container: animationContainer7, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/lineaTexto.json' });
+      animation7.addEventListener('DOMLoaded', () => {
+      });
+
+      animation7.setSpeed(0.2);
+
+    }
+
 
 
 
