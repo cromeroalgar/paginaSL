@@ -347,7 +347,7 @@ export class InicioComponent implements OnInit {
       });
 
       
-    animation23.setSpeed(0.2);
+    animation23.setSpeed(0.1);
     }
 
 
