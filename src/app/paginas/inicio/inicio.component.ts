@@ -339,6 +339,17 @@ export class InicioComponent implements OnInit {
     animation22.setSpeed(0.2);
     }
 
+    const animationContainer23 = document.getElementById('titulomapa');
+  
+    if (animationContainer23) {
+      const animation23 = lottie.loadAnimation({ container: animationContainer23, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/titulomapa.json' });
+      animation23.addEventListener('DOMLoaded', () => {
+      });
+
+      
+    animation23.setSpeed(0.2);
+    }
+
 
 
 
