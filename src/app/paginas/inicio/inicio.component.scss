@@ -73,6 +73,14 @@
       text-align: left;
   }
 
+  .texto-superpuestoAliados {
+    position: absolute;
+    width: 135px;
+    margin-top: 9px;
+    margin-left: 940px;
+
+}
+
     .texto-superpuestocard {
       position: absolute;
       top: 20%;
@@ -367,8 +375,14 @@
 
 
 
-    @media only screen and (min-width: 1000px) {
-   
+    @media only screen and (max-width: 1380px) {
+      .texto-superpuestoAliados {
+        position: absolute;
+        width: 135px;
+        margin-top: 9px;
+        margin-left: 667px;
+    
+    }
     }
     
   
