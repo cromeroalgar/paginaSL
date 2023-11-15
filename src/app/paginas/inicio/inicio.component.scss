@@ -59,6 +59,20 @@
         text-align: left;
     }
 
+    .texto-superpuestoTituloBanner {
+      position: absolute;
+      width: 450px;
+      top: 350px;
+      left: 42%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+      font-size: 70px; /* Utilizamos un porcentaje para el tamaño de fuente */
+      z-index: 1;
+      background-color: transparent;
+      text-align: left;
+  }
+
     .texto-superpuestocard {
       position: absolute;
       top: 20%;

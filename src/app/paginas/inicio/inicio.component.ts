@@ -328,13 +328,17 @@ export class InicioComponent implements OnInit {
     }
 
 
-    const animationContainer22 = document.getElementById('ivisibleBanner');
+    const animationContainer22 = document.getElementById('titulobanner');
   
     if (animationContainer22) {
-      const animation22 = lottie.loadAnimation({ container: animationContainer22, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/invisiblebanner.json' });
+      const animation22 = lottie.loadAnimation({ container: animationContainer22, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/titulobanner.json' });
       animation22.addEventListener('DOMLoaded', () => {
       });
+
+      
+    animation22.setSpeed(0.2);
     }
+
 
 
 
