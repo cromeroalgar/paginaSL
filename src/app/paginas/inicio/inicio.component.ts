@@ -143,7 +143,10 @@ export class InicioComponent implements OnInit {
       animation4.addEventListener('DOMLoaded', () => {
       });
 
-      animation4.setSpeed(0.2);
+      animation4.setSpeed(0.1);
+
+      
+
     }
 
     const animationContainer5 = document.getElementById('lineaTexto');
