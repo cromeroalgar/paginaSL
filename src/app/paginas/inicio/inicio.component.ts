@@ -145,7 +145,7 @@ export class InicioComponent implements OnInit {
 
       animation4.setSpeed(0.1);
 
-      
+      animation4.pause(); 
 
     }
 
@@ -350,12 +350,15 @@ export class InicioComponent implements OnInit {
       });
 
       
-    animation23.setSpeed(0.3);
+    animation23.setSpeed(0.5);
+    
+
+
     }
 
-
-
-
+  
+  
+    
 
   }
 
