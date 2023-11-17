@@ -1,4 +1,36 @@
 
+
+
+.animate-text {
+  opacity: 0; /* Inicialmente invisible */
+  animation: fadeIn 5s forwards; /* Animación de fade-in */
+}
+
+
+.delay-1 {
+  animation-delay: 0s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+.delay-3 {
+  animation-delay: 2s;
+}
+
+.delay-4 {
+  animation-delay: 3s;
+}
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+
  
  .carousel-indicators {
   position: absolute;
