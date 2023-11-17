@@ -111,8 +111,7 @@ export class InicioComponent implements OnInit {
   }
 
   ngOnInit(): void {    
-
-    window.scroll(0,0);
+   
 
     const animationContainer = document.getElementById('cerebro');
   
@@ -153,6 +152,7 @@ export class InicioComponent implements OnInit {
  
 
   }
+
 
   banderaLinea1 = true;
 
