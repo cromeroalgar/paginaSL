@@ -2,6 +2,7 @@ import { CarruselService } from './../../compartido/servicios/carrusel.service';
 import { ModalService } from './../../compartido/servicios/modal.service';
 import { FormBuilder } from '@angular/forms';
 import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { timer } from 'rxjs';
 
 import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -30,6 +31,22 @@ export class InicioComponent implements OnInit {
   espacioRojo: boolean = true;
 
   marginTopDiv: string = '30px';
+
+  @ViewChild('colombia') colombia!: ElementRef;
+
+  
+  @ViewChild('mexico') mexico!: ElementRef;
+
+  @ViewChild('ecuador') ecuador!: ElementRef;
+
+  @ViewChild('peru') peru!: ElementRef;
+  @ViewChild('chile') chile!: ElementRef;
+  @ViewChild('argentina') argentina!: ElementRef;
+  @ViewChild('dominicana') dominicana!: ElementRef;
+  @ViewChild('guatemala') guatemala!: ElementRef;
+  @ViewChild('salvador') salvador!: ElementRef;
+  @ViewChild('panama') panama!: ElementRef;
+  @ViewChild('honduras') honduras!: ElementRef;
 
   constructor(private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
  
@@ -251,12 +268,17 @@ export class InicioComponent implements OnInit {
     const animationContainer23 = document.getElementById('titulomapa');
   
     if (animationContainer23) {
-      const animation23 = lottie.loadAnimation({ container: animationContainer23, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/titulomapa.json' });
-      animation23.addEventListener('DOMLoaded', () => {
-      });
 
-      
-    animation23.setSpeed(0.2);
+      timer(0).subscribe(() => {
+
+      const animation23 = lottie.loadAnimation({ container: animationContainer23, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/titulomapa.json' });
+ 
+    animation23.addEventListener('DOMLoaded', () => {
+    });
+
+    animation23.setSpeed(0.3);
+
+  });
     
 
 
@@ -266,11 +288,20 @@ export class InicioComponent implements OnInit {
     const animationContainer10 = document.getElementById('colombia');
 
     if (animationContainer10) {
+
+      timer(4500).subscribe(() => {
+
       const animation10 = lottie.loadAnimation({ container: animationContainer10, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/colombia.json' });
       animation10.addEventListener('DOMLoaded', () => {
       });
 
       animation10.setSpeed(0.2);
+
+      if (this.colombia) {
+        this.colombia.nativeElement.style.display = 'block';
+      }
+
+    });
 
     }
 
@@ -279,55 +310,102 @@ export class InicioComponent implements OnInit {
     const animationContainer12 = document.getElementById('mexico');
 
     if (animationContainer12) {
+
+      timer(1000).subscribe(() => {
+
       const animation12 = lottie.loadAnimation({ container: animationContainer12, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/iconorojo.json' });
       animation12.addEventListener('DOMLoaded', () => {
       });
 
       animation12.setSpeed(0.2);
 
+      if (this.mexico) {
+        this.mexico.nativeElement.style.display = 'block';
+      }
+
+    });
+
     }
 
     const animationContainer13 = document.getElementById('salvador');
 
     if (animationContainer13) {
+
+      
+      timer(3000).subscribe(() => {
+
       const animation13 = lottie.loadAnimation({ container: animationContainer13, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/mexicoSalvadorPeru.json' });
       animation13.addEventListener('DOMLoaded', () => {
       });
 
       animation13.setSpeed(0.2);
 
+      if (this.salvador) {
+        this.salvador.nativeElement.style.display = 'block';
+      }
+
+    });
+
     }
 
     const animationContainer14 = document.getElementById('peru');
 
     if (animationContainer14) {
+
+      
+      timer(5500).subscribe(() => {
+      
       const animation14 = lottie.loadAnimation({ container: animationContainer14, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/mexicoSalvadorPeru.json' });
       animation14.addEventListener('DOMLoaded', () => {
       });
 
       animation14.setSpeed(0.2);
 
+      if (this.peru) {
+        this.peru.nativeElement.style.display = 'block';
+      }
+
+    });
+
     }
 
     const animationContainer15 = document.getElementById('argentina');
 
     if (animationContainer15) {
+
+      timer(6500).subscribe(() => {
+
       const animation15 = lottie.loadAnimation({ container: animationContainer15, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/panamaArgentina.json' });
       animation15.addEventListener('DOMLoaded', () => {
       });
 
       animation15.setSpeed(0.2);
 
+      if (this.argentina) {
+        this.argentina.nativeElement.style.display = 'block';
+      }
+
+    });
+
     }
 
     const animationContainer16 = document.getElementById('panama');
 
     if (animationContainer16) {
+
+      timer(4000).subscribe(() => {
+
       const animation16 = lottie.loadAnimation({ container: animationContainer16, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/panamaArgentina.json' });
       animation16.addEventListener('DOMLoaded', () => {
       });
 
       animation16.setSpeed(0.2);
+
+      if (this.panama) {
+        this.panama.nativeElement.style.display = 'block';
+      }
+
+    });
 
     }
 
@@ -335,11 +413,20 @@ export class InicioComponent implements OnInit {
     const animationContainer17 = document.getElementById('guatemala');
 
     if (animationContainer17) {
+
+      timer(2000).subscribe(() => {
+
       const animation17 = lottie.loadAnimation({ container: animationContainer17, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/DominicanaGuatemala.json' });
       animation17.addEventListener('DOMLoaded', () => {
       });
 
       animation17.setSpeed(0.2);
+
+      if (this.guatemala) {
+        this.guatemala.nativeElement.style.display = 'block';
+      }
+
+    });
 
     }
 
@@ -348,33 +435,60 @@ export class InicioComponent implements OnInit {
     const animationContainer18 = document.getElementById('dominicana');
 
     if (animationContainer18) {
+
+      timer(2000).subscribe(() => {
+
       const animation18 = lottie.loadAnimation({ container: animationContainer18, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/mexicoSalvadorPeru.json' });
       animation18.addEventListener('DOMLoaded', () => {
       });
 
       animation18.setSpeed(0.2);
 
+      if (this.dominicana) {
+        this.dominicana.nativeElement.style.display = 'block';
+      }
+
+    });
+
     }
 
     const animationContainer19 = document.getElementById('ecuador');
 
     if (animationContainer19) {
+
+      timer(5000).subscribe(() => {
+
       const animation19 = lottie.loadAnimation({ container: animationContainer19, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/DominicanaGuatemala.json' });
       animation19.addEventListener('DOMLoaded', () => {
       });
 
       animation19.setSpeed(0.2);
 
+      if (this.ecuador) {
+        this.ecuador.nativeElement.style.display = 'block';
+      }
+
+    });
+
     }
 
     const animationContainer20 = document.getElementById('chile');
 
     if (animationContainer20) {
+
+      timer(6000).subscribe(() => {
+
       const animation20 = lottie.loadAnimation({ container: animationContainer20, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/iconorojo.json' });
       animation20.addEventListener('DOMLoaded', () => {
       });
 
       animation20.setSpeed(0.2);
+
+      if (this.chile) {
+        this.chile.nativeElement.style.display = 'block';
+      }
+
+    });
 
     }
 
@@ -382,11 +496,20 @@ export class InicioComponent implements OnInit {
     const animationContainer21 = document.getElementById('honduras');
 
     if (animationContainer21) {
+
+      timer(3500).subscribe(() => {
+
       const animation21 = lottie.loadAnimation({ container: animationContainer21, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/iconorojo.json' });
       animation21.addEventListener('DOMLoaded', () => {
       });
 
       animation21.setSpeed(0.2);
+
+      if (this.honduras) {
+        this.honduras.nativeElement.style.display = 'block';
+      }
+
+    });
 
     }
 
