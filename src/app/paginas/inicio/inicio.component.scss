@@ -1,3 +1,33 @@
+.banner {
+  position: absolute;
+ /* Ajusta la posición izquierda según tu diseño */
+  top: 220%; /* Centra verticalmente el banner */
+  transform: translateY(-50%);
+  background-color: #625e5e; /* Color de fondo gris para el banner */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.redes-sociales {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Cambia a 'row' si quieres los iconos en una fila */
+  align-items: center;
+}
+
+.redes-sociales li {
+  margin: 5px; /* Espacio entre los iconos */
+}
+
+.redes-sociales img {
+  width: 40px; /* Ajusta el tamaño de los iconos según tus necesidades */
+  height: 40px;
+}
 
 
 
