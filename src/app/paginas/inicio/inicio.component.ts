@@ -165,7 +165,6 @@ export class InicioComponent implements OnInit {
   onWindowScroll(event: Event) {
         // Obtener la posición actual del scroll en el eje Y
         const scrollYPos = window.scrollY || window.pageYOffset;
-        console.log('Posición del eje Y:', scrollYPos);
 
         if(scrollYPos > 100 && this.banderaLinea1 == true){
 
