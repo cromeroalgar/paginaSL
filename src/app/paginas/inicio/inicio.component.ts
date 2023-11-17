@@ -289,7 +289,7 @@ export class InicioComponent implements OnInit {
 
     if (animationContainer10) {
 
-      timer(4500).subscribe(() => {
+      timer(1000).subscribe(() => {
 
       const animation10 = lottie.loadAnimation({ container: animationContainer10, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/colombia.json' });
       animation10.addEventListener('DOMLoaded', () => {
@@ -311,7 +311,7 @@ export class InicioComponent implements OnInit {
 
     if (animationContainer12) {
 
-      timer(1000).subscribe(() => {
+      timer(1500).subscribe(() => {
 
       const animation12 = lottie.loadAnimation({ container: animationContainer12, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/iconorojo.json' });
       animation12.addEventListener('DOMLoaded', () => {
