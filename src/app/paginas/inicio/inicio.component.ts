@@ -34,7 +34,7 @@ export class InicioComponent implements OnInit {
 
   @ViewChild('colombia') colombia!: ElementRef;
 
-  
+  @ViewChild('banner') banner!: ElementRef;
   @ViewChild('mexico') mexico!: ElementRef;
 
   @ViewChild('ecuador') ecuador!: ElementRef;
@@ -182,6 +182,16 @@ export class InicioComponent implements OnInit {
   onWindowScroll(event: Event) {
         // Obtener la posición actual del scroll en el eje Y
         const scrollYPos = window.scrollY || window.pageYOffset;
+
+        if (scrollYPos < 550){
+          if (this.banner) {
+            this.banner.nativeElement.style.display = 'none';
+          }
+        } else {
+          if (this.banner) {
+            this.banner.nativeElement.style.display = 'block';
+          }
+        }
 
         if(scrollYPos > 50 && this.banderaLinea1 == true){
 

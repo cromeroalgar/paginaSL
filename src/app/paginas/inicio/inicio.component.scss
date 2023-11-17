@@ -1,14 +1,16 @@
 .banner {
-  position: absolute;
+  
+  position: fixed;
  /* Ajusta la posición izquierda según tu diseño */
-  top: 220%; /* Centra verticalmente el banner */
+  top: 44%; /* Centra verticalmente el banner */
   transform: translateY(-50%);
-  background-color: #625e5e; /* Color de fondo gris para el banner */
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
+  background-color: #625e5e; /* Color de fondo gris para el banner */
+
 }
 
 .redes-sociales {
