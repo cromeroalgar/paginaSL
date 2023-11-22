@@ -233,7 +233,7 @@ export class InicioComponent implements OnInit {
             animation7.addEventListener('DOMLoaded', () => {
             });
       
-            animation7.setSpeed(0.2);
+            animation7.setSpeed(0.5);
       
           }
 
