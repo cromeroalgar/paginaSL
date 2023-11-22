@@ -5,17 +5,23 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [ 
 
   { 
-  path: '', 
+  path: 'nosotros', 
   loadChildren: () => import('./paginas/inicio/inicio.module').then(m => m.InicioModule)
+
+},
+
+{ 
+  path: 'modelos', 
+  loadChildren: () => import('./paginas/modelos/modelos.module').then(m => m.ModelosModule)
 
 },
 
 
  {
-  path: '', redirectTo: '/', pathMatch: 'full',  
+  path: '', redirectTo: '/nosotros', pathMatch: 'full',  
 },
 {
-  path: '**', redirectTo: '/', pathMatch: 'full'
+  path: '**', redirectTo: '/nosotros', pathMatch: 'full'
 }];
 
 @NgModule({
