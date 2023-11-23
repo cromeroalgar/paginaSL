@@ -6,18 +6,20 @@
 
     
 
-    <div class="video-container" style="margin-right: -90px;">
+    <div class="video-container" style="margin-right: -350px;">
 
         <img style="width: 90%;" src="assets/videos/animados.gif" alt="Mi GIF">
     
 
     <div class="texto-superpuesto subtitleMain" style=" margin-left: -100px;">
 
-        <span style="font-size: 65px;" class="animate-text delay-1">¡HOLrrrA!</span>
-        <p  class="texto2 animate-text delay-2">Te damos la bienvenida a SL</p>
-        <span class="animate-text delay-3">HACEMOS VISIBLE</span>
+        <span style="font-size: 65px;" class="animate-text delay-1">MODELO</span>
+        <p  class="texto2 animate-text delay-2">Revelamos verdades y transformamos <br> pensamientos para crear estrategias <br> efectivas, eficientes y responsables.</p>
     
-        <p id="titulobanner" class="texto-superpuestoTituloBanner animate-text delay-4" style="margin-top: -50px; margin-left: -10px;"></p>  
+
+    
+          <button class="btn texto-superpuestoTituloBanner animate-text delay-3"  >Descubre tu arquetipo</button>
+ 
   
     </div>
 
@@ -31,37 +33,27 @@
       <div class="container">
         <!-- Primera fila -->
         <div class="row">
-            <div class="col-md-5 subtitleMain" style="background-color: transparent;">
-                <div class="card custom-card border-0" style="background-color: transparent;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
+            <div class="col-md-12 subtitleMain" style="background-color: transparent;">
+                <div class="card custom-card border-0" style="background-color: transparent; text-align: center;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
                   
-                  
-                  <div class="card-body">
-                        <strong><p class="consultora" style="line-height: 1; ">SOMOS UNA CONSULTORA <br><span class="consultora">EXPERTA EN <span class="consultoraH">LA HUMANIZACIÓN</span></span>
+        
+                        <strong><p class="consultora" style="line-height: 1; ">SOMOS UNA CONSULTORA <span class="consultora">EXPERTA EN <span class="consultoraH">LA HUMANIZACIÓN</span></span>
                      
                         </p>
 
-                        <div class="consultoraH" style="margin-top: -18px;">DE LOS NEGOCIOS</div>
                      
                         </strong>
-                        
-                        <p id="lineaTexto" style="width: 75%; margin-left: -30px; margin-top: -39.8%; display: block;"> </p>
 
-                        <p id="lineaTexto2" style="width: 78%; margin-left: 73px; margin-top: -315px; display: block;"> </p>
-                    </div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imagenModal">
+                          Abrir Galería
+                        </button>
+                        
+        
 
                    
                 </div>
             </div>
-            <div class="col-md-7">
-                <div class="card custom-card border-0" style="background-color: transparent;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
-                    <div class="card-body">
-                        <p style="font-size: 12px; text-align: justify;">Nacimos hace más de 23 años con un interes en la <strong> humanización de los negocios,</strong> por eso hemos desarrollado <strong>modelos de comprensión humana</strong> que generan valor estratégico a diferentes negocios y organizacioes en LATAM. 
-                        Detectamos <strong>insights</strong> poderosos que nos permite visualizar verdades ocultas e idetiificar tensiones, y los activamos a traves de los <strong>arquetipos</strong> 
-                        para crear escenarios de conexión relevante y transformar <strong>mindsets.</strong> Así aportamos al progreso personal, social y económico.   
-                        </p>
-                    </div>
-                </div>
-            </div>
+            
         </div>
 
 
@@ -874,6 +866,42 @@
   </div>
 
 </div>
+
+
+<div class="modal fade" id="imagenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color: transparent; margin-top: 100px;">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content" style="background-color: transparent; box-shadow: none;">
+   
+      <div class="modal-body">
+        <!-- Contenido de la galería -->
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Imagen 1 -->
+            <div class="carousel-item active">
+              <img src="imagen1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <!-- Imagen 2 -->
+            <div class="carousel-item">
+              <img src="imagen2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <!-- Agrega más imágenes según sea necesario -->
+          </div>
+          <!-- Controles de navegación -->
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
 
 
 

@@ -1,3 +1,11 @@
+.modal-content {
+  border: 0;
+}
+
+.carousel-inner {
+  border: 0;
+}
+
 .banner {
   
   position: fixed;
@@ -123,19 +131,6 @@
         text-align: left;
     }
 
-    .texto-superpuestoTituloBanner {
-      position: absolute;
-      width: 450px;
-      top: 350px;
-      left: 42%;
-      transform: translate(-50%, -50%);
-      background: rgba(0, 0, 0, 0.5);
-      padding: 5px;
-      font-size: 70px; /* Utilizamos un porcentaje para el tamaño de fuente */
-      z-index: 1;
-      background-color: transparent;
-      text-align: left;
-  }
 
   .texto-superpuestoAliados {
     position: absolute;
@@ -295,6 +290,15 @@
     right: 0;
   }
 
+  .texto-superpuestoTituloBanner{
+    background: linear-gradient(to right, #E38520, #DC1A4D);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    box-shadow: none;
+  }
+
   
   .custom-button3 {
     background: linear-gradient(to right, #c01f56, #54337b);
@@ -323,7 +327,7 @@
   width: 500px; /* Ajusta el ancho según sea necesario */
     height: 300px; 
   //background-image: url('../assets/imagenes/slides/f_banner_1_sm.jpg'); /* Ruta de tu imagen */
-  color: white; /* Ajusta el color del texto para que sea legible sobre la imagen */
+  color: white; /* Ajusta el color del para que sea legible sobre la imagen */
   text-align: center; /* Ajusta la alineación del texto */
   padding: 20px;
 }
@@ -519,7 +523,6 @@
     
 
 
-.slide{background-color: #E54F16;}
 
 .bg-exitoso{
   background-color: #28a74512;
