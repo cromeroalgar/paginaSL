@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 394 361">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_9);
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #eef0f6;
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="9.58" dy="9.58"/>
+      <feGaussianBlur result="blur" stdDeviation="7.18"/>
+      <feFlood flood-color="#000" flood-opacity=".15"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="Degradado_sin_nombre_9" data-name="Degradado sin nombre 9" x1="187.32" y1="83.18" x2="187.32" y2="12.31" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e38520"/>
+      <stop offset=".26" stop-color="#e28221"/>
+      <stop offset=".44" stop-color="#e27825"/>
+      <stop offset=".6" stop-color="#e1692b"/>
+      <stop offset=".75" stop-color="#df5334"/>
+      <stop offset=".89" stop-color="#dd3640"/>
+      <stop offset="1" stop-color="#dc1a4d"/>
+    </linearGradient>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <path class="cls-2" d="m354.43,225.25L216.46,30.41c-11.92-24.14-46.34-24.14-58.26,0L20.24,225.25c-23.39,47.39,11.1,102.87,63.95,102.87h206.29c52.85,0,87.34-55.48,63.95-102.87Z"/>
+      <path class="cls-1" d="m216.47,30.42l31.67,44.73c-19.39,5.25-39.78,8.03-60.84,8.03s-41.4-2.79-60.79-8l31.69-44.75c11.93-24.15,46.35-24.15,58.27,0Z"/>
+    </g>
+  </g>
+</svg>

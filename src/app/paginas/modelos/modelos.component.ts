@@ -21,6 +21,10 @@ export class ModelosComponent implements OnInit {
   @ViewChild('videoElement', { static: false }) videoElement?: ElementRef;
   @ViewChild('playButton', { static: false }) playButton?: ElementRef;
 
+  mostrarRecurso21Info: boolean = false;
+  mostrarRecurso22Info: boolean = false;
+  mostrarRecurso23Info: boolean = false;
+  mostrarRecurso24Info: boolean = false;
 
   botonEmpresasBlanco: boolean = true;
   botonEmpresasRojo: boolean = false;
@@ -54,6 +58,33 @@ export class ModelosComponent implements OnInit {
    
   }
 
+  resurso21(){
+    this.mostrarRecurso21Info = !this.mostrarRecurso21Info;
+    this.mostrarRecurso22Info = false;
+    this.mostrarRecurso23Info = false;
+    this.mostrarRecurso24Info = false;
+  }
+
+  resurso22(){
+    this.mostrarRecurso22Info = !this.mostrarRecurso22Info;
+    this.mostrarRecurso21Info = false;
+    this.mostrarRecurso23Info = false;
+    this.mostrarRecurso24Info = false;
+  }
+
+  resurso23(){
+    this.mostrarRecurso23Info = !this.mostrarRecurso23Info;
+    this.mostrarRecurso21Info = false;
+    this.mostrarRecurso22Info = false;
+    this.mostrarRecurso24Info = false;
+  }
+
+  resurso24(){
+    this.mostrarRecurso24Info = !this.mostrarRecurso24Info;
+    this.mostrarRecurso21Info = false;
+    this.mostrarRecurso22Info = false;
+    this.mostrarRecurso23Info = false;
+  }
  
   mostrarInfoEmpresas(){
 
@@ -130,28 +161,34 @@ export class ModelosComponent implements OnInit {
   ngOnInit(): void {    
    
 
-    const animationContainer = document.getElementById('cerebro');
+    const animationContainer = document.getElementById('reloj');
   
     if (animationContainer) {
-      const animation1 = lottie.loadAnimation({ container: animationContainer, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/cerebrito.json' });
+      const animation1 = lottie.loadAnimation({ container: animationContainer, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/reloj.json' });
       animation1.addEventListener('DOMLoaded', () => {
       });
+
+      animation1.setSpeed(0.2);
     }
 
-    const animationContainer2 = document.getElementById('ojo');
+    const animationContainer2 = document.getElementById('posit');
   
     if (animationContainer2) {
-      const animation2 = lottie.loadAnimation({ container: animationContainer2, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/ojos.json' });
+      const animation2 = lottie.loadAnimation({ container: animationContainer2, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/posit.json' });
       animation2.addEventListener('DOMLoaded', () => {
       });
+
+      animation2.setSpeed(0.2);
     }
 
-    const animationContainer3 = document.getElementById('flecha');
+    const animationContainer3 = document.getElementById('robot');
 
     if (animationContainer3) {
-      const animation3 = lottie.loadAnimation({ container: animationContainer3, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/flecha.json' });
+      const animation3 = lottie.loadAnimation({ container: animationContainer3, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/robot.json' });
       animation3.addEventListener('DOMLoaded', () => {
       });
+
+      animation3.setSpeed(0.2);
     }
 
     

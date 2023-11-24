@@ -158,8 +158,8 @@
 
     .texto-superpuesto2 {
       position: absolute;
-      top: 10%;
-      left: 70%;
+      top: 44.5%;
+      left: 30%;
       transform: translate(-50%, -50%);
       background: rgba(0, 0, 0, 0.5);
       color: black;
@@ -174,8 +174,8 @@
 
   .texto-superpuesto3 {
     position: absolute;
-    top: 35%;
-    left: 30%;
+    top: 9%;
+    left: 53%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.5);
     color: black;
@@ -186,6 +186,54 @@
     z-index: 1;
     background-color: transparent;
     text-align: left;
+}
+
+.texto-superpuesto4 {
+  position: absolute;
+  top: 26%;
+  left: 60.7%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 60px; /* Utilizamos un porcentaje para el padding */
+  font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 1;
+  background-color: transparent;
+  text-align: left;
+}
+
+.texto-superpuesto5 {
+  position: absolute;
+  top: 62.5%;
+  left: 60.7%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 60px; /* Utilizamos un porcentaje para el padding */
+  font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 1;
+  background-color: transparent;
+  text-align: left;
+}
+
+.texto-superpuesto6 {
+  position: absolute;
+  top: 79.5%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 60px; /* Utilizamos un porcentaje para el padding */
+  font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 1;
+  background-color: transparent;
+  text-align: left;
 }
 
     .texto-colombia {

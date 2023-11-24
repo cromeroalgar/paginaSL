@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eef0f6;
+        filter: url(#drop-shadow-1);
+        stroke-width: 0px;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <path class="cls-1" d="m249.62,15.49c-14.8,6.5-230.97,111.59-234.18,113.36,25.12,44.37,39.47,95.63,39.47,150.26,0,1.9-.04,3.79-.07,5.68h259.84c.02-1.9.07-3.78.07-5.68,0-95.21-23.55-184.91-65.12-263.61Z"/>
+  </g>
+</svg>
