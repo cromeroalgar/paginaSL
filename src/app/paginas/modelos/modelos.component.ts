@@ -191,6 +191,36 @@ export class ModelosComponent implements OnInit {
       animation3.setSpeed(0.3);
     }
 
+    const animationCerebro2 = document.getElementById('cerebro2');
+
+    if (animationCerebro2) {
+      const animation3 = lottie.loadAnimation({ container: animationCerebro2, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/cerebro2.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.4);
+    }
+
+    
+    const animationPluma = document.getElementById('pluma');
+
+    if (animationPluma) {
+      const animation3 = lottie.loadAnimation({ container: animationPluma, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/pluma.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.4);
+    }
+
+    const animationDiana = document.getElementById('diana');
+
+    if (animationDiana) {
+      const animation3 = lottie.loadAnimation({ container: animationDiana, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/diana.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.4);
+    }
     
 
     const animationContainer22 = document.getElementById('titulobanner');
