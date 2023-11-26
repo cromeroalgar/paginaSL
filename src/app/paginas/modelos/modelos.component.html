@@ -459,10 +459,8 @@
 
          <!-- Segunda fila -->
          <div class="row" style="margin-top: -10px;">
-          <div class="col-md-3">
-              <div class="card plan cartas " id="card_plan_1">
-              
-                
+          <div class="col-md-3" style="cursor: pointer;" (click)="mostrarCerebro2()">
+              <div class="card plan cartas" [ngClass]="{ 'ocultar': !cartaCerebro2 }" id="cerebro2x">
                 <span style="width: 100px; margin-top: 15px; margin-right: 60px;" class="logo" id="cerebro2" alt="Logotipo"></span>
 
                   <div class="card-body plan-card-body text-center" style=" padding-top: 140px;">
@@ -471,35 +469,46 @@
                     
                     
                   </div>
-
-                  
-               
               </div>
+              <div class="card plan cartas" [ngClass]="{ 'ocultar': cartaCerebro2 }" id="cerebro2Info">
+            
+                <div class="card-body plan-card-body" style=" padding-top: 33px; padding-bottom: 35px;">
+                
+                  <p style="font-size: 15px; color: gray; line-height: 1;">Antropólogos psicólogos, sociólogos, pedagogos y estadistas, comparten sus conocimientos para entender los fenómenos humanos, generando interpretaciones únicas de cada uno de nuestros proyectos.</p>
+                  
+                </div>
+            </div>
           </div>
 
-          <div class="col-md-3">
+         
 
-            <div class="card plan cartas " id="card_plan_1">
-              
-                
+          
+
+          <div class="col-md-3" style="cursor: pointer;" (click)="mostrarPluma()">
+
+            <div class="card plan cartas " id="card_plan_1" [ngClass]="{ 'ocultar': !cartaPluma }">
               <span style="width: 100px; margin-top: 15px; margin-right: 60px;" class="logo" id="pluma" alt="Logotipo"></span>
 
                 <div class="card-body plan-card-body text-center" style=" padding-top: 140px;">
                 
                   <span class="miparrafo" style="font-size: 15px;">Expertos <br>creatividad, diseño <br> y desarrollo:</span>
-                  
-                  
                 </div>
-
-                
-             
             </div>
+
+            <div class="card plan cartas" [ngClass]="{ 'ocultar': cartaPluma }">
+            
+              <div class="card-body plan-card-body" style=" padding-top: 80px; padding-bottom: 63px;">
+              
+                <p style="font-size: 15px; color: gray; line-height: 1;">Especialistas en activación de modelos de pensamiento, creatividad, diseño, semiótica y multimedia.</p>
+                
+              </div>
+          </div>
 
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3" style="cursor: pointer;" (click)="mostrarDiana()">
 
-            <div class="card plan cartas " id="card_plan_1">
+            <div class="card plan cartas " id="card_plan_1" [ngClass]="{ 'ocultar': !cartaDiana }">
               
                 
               <span style="width: 100px; margin-top: 15px; margin-right: 60px;" class="logo" id="diana" alt="Logotipo"></span>
@@ -511,6 +520,15 @@
                 </div>
 
             </div>
+
+            <div class="card plan cartas" [ngClass]="{ 'ocultar': cartaDiana }">
+            
+              <div class="card-body plan-card-body" style=" padding-top: 33px;">
+              
+                <p style="font-size: 15px; color: gray; line-height: 1;">Profesionales experimentados en la planeación estrategíca, mercadeo, comunicación, transformación del ser y negocios, comparten sus conocimientos para la identificación de espacios de oportunidad.</p>
+                
+              </div>
+          </div>
 
         </div>
 

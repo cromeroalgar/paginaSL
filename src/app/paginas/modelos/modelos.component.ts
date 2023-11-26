@@ -30,6 +30,9 @@ export class ModelosComponent implements OnInit {
   botonEmpresasRojo: boolean = false;
   botonEmprendimientosBlanco: boolean = true;
   botonEmprendimientosRojo: boolean = false;
+  cartaCerebro2: boolean = true;
+  cartaPluma: boolean = true;
+  cartaDiana: boolean = true;
   infoEmprendimientos: boolean = false;
   infoEmpresas: boolean = false;
   espacioRojo: boolean = true;
@@ -106,6 +109,7 @@ export class ModelosComponent implements OnInit {
 
   }
 
+
   ocultarInfoEmpresas(){
 
     this.botonEmpresasBlanco = true;
@@ -156,6 +160,25 @@ export class ModelosComponent implements OnInit {
     } else {
       this.espacioRojo = false;
     }
+  }
+
+  
+  mostrarCerebro2(){
+    this.cartaCerebro2 = !this.cartaCerebro2;
+    this.cartaPluma = true;
+    this.cartaDiana = true;
+  }
+
+  mostrarPluma(){
+    this.cartaPluma = !this.cartaPluma;
+    this.cartaCerebro2 = true;
+    this.cartaDiana = true;
+  }
+
+  mostrarDiana(){
+    this.cartaDiana = !this.cartaDiana;
+    this.cartaCerebro2 = true;
+    this.cartaPluma = true;
   }
 
   ngOnInit(): void {    
