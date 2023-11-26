@@ -668,12 +668,17 @@
     box-shadow: none;
   }
 
+  #miBoton.clicked {
+    background: linear-gradient(to right, #E38520, #DC1A4D); /* Cambia los colores a tu gusto */
+  }
+
   
   .custom-button3 {
     background: linear-gradient(to right, #c01f56, #54337b);
   }
 
   .miparrafo {
+    
     background: -webkit-linear-gradient(left, #E38520, #DC1A4D); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, #E38520, #DC1A4D); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, #E38520, #DC1A4D); /* For Firefox 3.6 to 15 */
@@ -752,7 +757,7 @@
 
 
   .consultora{
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .consultoraH{

@@ -168,7 +168,7 @@ export class ModelosComponent implements OnInit {
       animation1.addEventListener('DOMLoaded', () => {
       });
 
-      animation1.setSpeed(0.2);
+      animation1.setSpeed(0.3);
     }
 
     const animationContainer2 = document.getElementById('posit');
@@ -178,7 +178,7 @@ export class ModelosComponent implements OnInit {
       animation2.addEventListener('DOMLoaded', () => {
       });
 
-      animation2.setSpeed(0.2);
+      animation2.setSpeed(0.3);
     }
 
     const animationContainer3 = document.getElementById('robot');
@@ -188,7 +188,7 @@ export class ModelosComponent implements OnInit {
       animation3.addEventListener('DOMLoaded', () => {
       });
 
-      animation3.setSpeed(0.2);
+      animation3.setSpeed(0.3);
     }
 
     
