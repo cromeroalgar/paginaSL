@@ -16,6 +16,12 @@ const routes: Routes = [
 
 },
 
+{ 
+  path: 'soluciones', 
+  loadChildren: () => import('./paginas/soluciones/soluciones.module').then(m => m.SolucionesModule)
+
+},
+
 
  {
   path: '', redirectTo: '/nosotros', pathMatch: 'full',  
