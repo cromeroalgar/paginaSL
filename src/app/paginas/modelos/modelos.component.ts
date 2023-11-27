@@ -21,6 +21,19 @@ export class ModelosComponent implements OnInit {
   @ViewChild('videoElement', { static: false }) videoElement?: ElementRef;
   @ViewChild('playButton', { static: false }) playButton?: ElementRef;
 
+  mostrarRecurso30Info: boolean = false;
+  mostrarRecurso31Info: boolean = false;
+  mostrarRecurso32Info: boolean = false;
+  mostrarRecurso33Info: boolean = false;
+  mostrarRecurso34Info: boolean = false;
+  mostrarRecurso35Info: boolean = false;
+  mostrarRecurso36Info: boolean = false;
+  mostrarRecurso37Info: boolean = false;
+  mostrarRecurso38Info: boolean = false;
+  mostrarRecurso39Info: boolean = false;
+  mostrarRecurso40Info: boolean = false;
+  mostrarRecurso41Info: boolean = false;
+
   mostrarRecurso21Info: boolean = false;
   mostrarRecurso22Info: boolean = false;
   mostrarRecurso23Info: boolean = false;
@@ -87,6 +100,54 @@ export class ModelosComponent implements OnInit {
     this.mostrarRecurso21Info = false;
     this.mostrarRecurso22Info = false;
     this.mostrarRecurso23Info = false;
+  }
+
+  resurso30(){
+    this.mostrarRecurso30Info = !this.mostrarRecurso30Info;
+  }
+
+  resurso31(){
+    this.mostrarRecurso31Info = !this.mostrarRecurso31Info;
+  }
+
+  resurso32(){
+    this.mostrarRecurso32Info = !this.mostrarRecurso32Info;
+  }
+
+  resurso33(){
+    this.mostrarRecurso33Info = !this.mostrarRecurso33Info;
+  }
+
+  resurso34(){
+    this.mostrarRecurso34Info = !this.mostrarRecurso34Info;
+  }
+
+  resurso35(){
+    this.mostrarRecurso35Info = !this.mostrarRecurso35Info;
+  }
+
+  resurso36(){
+    this.mostrarRecurso36Info = !this.mostrarRecurso36Info;
+  }
+
+  resurso37(){
+    this.mostrarRecurso37Info = !this.mostrarRecurso37Info;
+  }
+
+  resurso38(){
+    this.mostrarRecurso38Info = !this.mostrarRecurso38Info;
+  }
+
+  resurso39(){
+    this.mostrarRecurso39Info = !this.mostrarRecurso39Info;
+  }
+
+  resurso40(){
+    this.mostrarRecurso40Info = !this.mostrarRecurso40Info;
+  }
+
+  resurso41(){
+    this.mostrarRecurso41Info = !this.mostrarRecurso41Info;
   }
  
   mostrarInfoEmpresas(){
@@ -290,7 +351,7 @@ export class ModelosComponent implements OnInit {
           const animationContainer5 = document.getElementById('lineaTexto');
 
           if (animationContainer5) {
-            const animation5 = lottie.loadAnimation({ container: animationContainer5, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
+            const animation5 = lottie.loadAnimation({ container: animationContainer5, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Iconosinicio/lineaRoja2.json' });
             animation5.addEventListener('DOMLoaded', () => {
             });
       
