@@ -151,6 +151,9 @@ export class SolucionesComponent implements OnInit {
 
   ngOnInit(): void {    
 
+    
+    window.scrollTo(0, 0);
+
     const animationCerebro2 = document.getElementById('cerebro2');
 
     if (animationCerebro2) {
