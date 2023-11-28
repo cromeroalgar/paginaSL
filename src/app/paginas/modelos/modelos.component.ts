@@ -493,7 +493,7 @@ export class ModelosComponent implements OnInit {
           const animationContainer6 = document.getElementById('lineaTexto2');
 
           if (animationContainer6) {
-            const animation6 = lottie.loadAnimation({ container: animationContainer6, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
+            const animation6 = lottie.loadAnimation({ container: animationContainer6, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Iconosinicio/lineaRoja2.json' });
             animation6.addEventListener('DOMLoaded', () => {
             });
       
@@ -505,14 +505,14 @@ export class ModelosComponent implements OnInit {
         }
 
         
-        if(scrollYPos > 2000 && this.banderaLinea2 == true){
+        if(scrollYPos > 1700 && this.banderaLinea2 == true){
 
           this.banderaLinea2 = false;
 
           const animationContainer7 = document.getElementById('lineaTexto3');
 
           if (animationContainer7) {
-            const animation7 = lottie.loadAnimation({ container: animationContainer7, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
+            const animation7 = lottie.loadAnimation({ container: animationContainer7, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Iconosinicio/lineaseparadorauno.json' });
             animation7.addEventListener('DOMLoaded', () => {
             });
       
