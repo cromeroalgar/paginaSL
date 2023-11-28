@@ -104,50 +104,182 @@ export class ModelosComponent implements OnInit {
 
   resurso30(){
     this.mostrarRecurso30Info = !this.mostrarRecurso30Info;
+    this.mostrarRecurso31Info = false;
+    this.mostrarRecurso32Info = false;
+    this.mostrarRecurso33Info = false;
+    this.mostrarRecurso34Info = false;
+    this.mostrarRecurso35Info = false;
+    this.mostrarRecurso36Info = false;
+    this.mostrarRecurso37Info = false;
+    this.mostrarRecurso38Info = false;
+    this.mostrarRecurso39Info = false;
+    this.mostrarRecurso40Info = false;
+    this.mostrarRecurso41Info = false;
   }
 
   resurso31(){
     this.mostrarRecurso31Info = !this.mostrarRecurso31Info;
+    this.mostrarRecurso30Info = false;
+    this.mostrarRecurso32Info = false;
+    this.mostrarRecurso33Info = false;
+    this.mostrarRecurso34Info = false;
+    this.mostrarRecurso35Info = false;
+    this.mostrarRecurso36Info = false;
+    this.mostrarRecurso37Info = false;
+    this.mostrarRecurso38Info = false;
+    this.mostrarRecurso39Info = false;
+    this.mostrarRecurso40Info = false;
+    this.mostrarRecurso41Info = false;
   }
 
   resurso32(){
     this.mostrarRecurso32Info = !this.mostrarRecurso32Info;
+    this.mostrarRecurso31Info = false;
+    this.mostrarRecurso30Info = false;
+    this.mostrarRecurso33Info = false;
+    this.mostrarRecurso34Info = false;
+    this.mostrarRecurso35Info = false;
+    this.mostrarRecurso36Info = false;
+    this.mostrarRecurso37Info = false;
+    this.mostrarRecurso38Info = false;
+    this.mostrarRecurso39Info = false;
+    this.mostrarRecurso40Info = false;
+    this.mostrarRecurso41Info = false;
   }
 
   resurso33(){
     this.mostrarRecurso33Info = !this.mostrarRecurso33Info;
+    this.mostrarRecurso31Info = false;
+    this.mostrarRecurso32Info = false;
+    this.mostrarRecurso30Info = false;
+    this.mostrarRecurso34Info = false;
+    this.mostrarRecurso35Info = false;
+    this.mostrarRecurso36Info = false;
+    this.mostrarRecurso37Info = false;
+    this.mostrarRecurso38Info = false;
+    this.mostrarRecurso39Info = false;
+    this.mostrarRecurso40Info = false;
+    this.mostrarRecurso41Info = false;
   }
 
   resurso34(){
     this.mostrarRecurso34Info = !this.mostrarRecurso34Info;
+    this.mostrarRecurso31Info = false;
+    this.mostrarRecurso32Info = false;
+    this.mostrarRecurso33Info = false;
+    this.mostrarRecurso30Info = false;
+    this.mostrarRecurso35Info = false;
+    this.mostrarRecurso36Info = false;
+    this.mostrarRecurso37Info = false;
+    this.mostrarRecurso38Info = false;
+    this.mostrarRecurso39Info = false;
+    this.mostrarRecurso40Info = false;
+    this.mostrarRecurso41Info = false;
   }
 
   resurso35(){
     this.mostrarRecurso35Info = !this.mostrarRecurso35Info;
+    this.mostrarRecurso31Info = false;
+    this.mostrarRecurso32Info = false;
+    this.mostrarRecurso33Info = false;
+    this.mostrarRecurso34Info = false;
+    this.mostrarRecurso30Info = false;
+    this.mostrarRecurso36Info = false;
+    this.mostrarRecurso37Info = false;
+    this.mostrarRecurso38Info = false;
+    this.mostrarRecurso39Info = false;
+    this.mostrarRecurso40Info = false;
+    this.mostrarRecurso41Info = false;
   }
 
   resurso36(){
     this.mostrarRecurso36Info = !this.mostrarRecurso36Info;
+    this.mostrarRecurso31Info = false;
+    this.mostrarRecurso32Info = false;
+    this.mostrarRecurso33Info = false;
+    this.mostrarRecurso34Info = false;
+    this.mostrarRecurso35Info = false;
+    this.mostrarRecurso30Info = false;
+    this.mostrarRecurso37Info = false;
+    this.mostrarRecurso38Info = false;
+    this.mostrarRecurso39Info = false;
+    this.mostrarRecurso40Info = false;
+    this.mostrarRecurso41Info = false;
   }
 
   resurso37(){
     this.mostrarRecurso37Info = !this.mostrarRecurso37Info;
+    this.mostrarRecurso31Info = false;
+    this.mostrarRecurso32Info = false;
+    this.mostrarRecurso33Info = false;
+    this.mostrarRecurso34Info = false;
+    this.mostrarRecurso35Info = false;
+    this.mostrarRecurso36Info = false;
+    this.mostrarRecurso30Info = false;
+    this.mostrarRecurso38Info = false;
+    this.mostrarRecurso39Info = false;
+    this.mostrarRecurso40Info = false;
+    this.mostrarRecurso41Info = false;
   }
 
   resurso38(){
     this.mostrarRecurso38Info = !this.mostrarRecurso38Info;
+    this.mostrarRecurso31Info = false;
+    this.mostrarRecurso32Info = false;
+    this.mostrarRecurso33Info = false;
+    this.mostrarRecurso34Info = false;
+    this.mostrarRecurso35Info = false;
+    this.mostrarRecurso36Info = false;
+    this.mostrarRecurso37Info = false;
+    this.mostrarRecurso30Info = false;
+    this.mostrarRecurso39Info = false;
+    this.mostrarRecurso40Info = false;
+    this.mostrarRecurso41Info = false;
   }
 
   resurso39(){
     this.mostrarRecurso39Info = !this.mostrarRecurso39Info;
+    this.mostrarRecurso31Info = false;
+    this.mostrarRecurso32Info = false;
+    this.mostrarRecurso33Info = false;
+    this.mostrarRecurso34Info = false;
+    this.mostrarRecurso35Info = false;
+    this.mostrarRecurso36Info = false;
+    this.mostrarRecurso37Info = false;
+    this.mostrarRecurso38Info = false;
+    this.mostrarRecurso30Info = false;
+    this.mostrarRecurso40Info = false;
+    this.mostrarRecurso41Info = false;
   }
 
   resurso40(){
     this.mostrarRecurso40Info = !this.mostrarRecurso40Info;
+    this.mostrarRecurso31Info = false;
+    this.mostrarRecurso32Info = false;
+    this.mostrarRecurso33Info = false;
+    this.mostrarRecurso34Info = false;
+    this.mostrarRecurso35Info = false;
+    this.mostrarRecurso36Info = false;
+    this.mostrarRecurso37Info = false;
+    this.mostrarRecurso38Info = false;
+    this.mostrarRecurso39Info = false;
+    this.mostrarRecurso30Info = false;
+    this.mostrarRecurso41Info = false;
   }
 
   resurso41(){
     this.mostrarRecurso41Info = !this.mostrarRecurso41Info;
+    this.mostrarRecurso31Info = false;
+    this.mostrarRecurso32Info = false;
+    this.mostrarRecurso33Info = false;
+    this.mostrarRecurso34Info = false;
+    this.mostrarRecurso35Info = false;
+    this.mostrarRecurso36Info = false;
+    this.mostrarRecurso37Info = false;
+    this.mostrarRecurso38Info = false;
+    this.mostrarRecurso39Info = false;
+    this.mostrarRecurso40Info = false;
+    this.mostrarRecurso30Info = false;
   }
  
   mostrarInfoEmpresas(){
