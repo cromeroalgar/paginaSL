@@ -190,7 +190,7 @@
 
 .texto-superpuestoG1 {
   position: absolute;
-  top: -6%;
+  top: -7%;
   left: 45%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.5);
@@ -206,8 +206,8 @@
 
 .texto-superpuestoG2 {
   position: absolute;
-  top: 20%;
-  left: 68%;
+  top: 13%;
+  left: 67%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.5);
   color: black;
@@ -270,8 +270,8 @@
 
 .texto-superpuestoG6 {
   position: absolute;
-  top: 22%;
-  left: 22%;
+  top: 13%;
+  left: 23%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.5);
   color: black;
@@ -286,7 +286,7 @@
 
 .texto-superpuestoF1{
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 20%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.5);
@@ -302,7 +302,71 @@
 
 .texto-superpuestoF2{
   position: absolute;
+top: -4%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 60px; /* Utilizamos un porcentaje para el padding */
+  font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 1;
+  background-color: transparent;
+  text-align: left;
+}
 
+.texto-superpuestoF3{
+  position: absolute;
+top: -2%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 60px; /* Utilizamos un porcentaje para el padding */
+  font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 1;
+  background-color: transparent;
+  text-align: left;
+}
+
+.texto-superpuestoF4{
+  position: absolute;
+top: 40%;
+  left: 69.5%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 60px; /* Utilizamos un porcentaje para el padding */
+  font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 1;
+  background-color: transparent;
+  text-align: left;
+}
+
+.texto-superpuestoF5{
+  position: absolute;
+  top: 91%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 60px; /* Utilizamos un porcentaje para el padding */
+  font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 1;
+  background-color: transparent;
+  text-align: left;
+}
+
+.texto-superpuestoF6{
+  position: absolute;
+  top: 89%;
   left: 30%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.5);
