@@ -493,7 +493,7 @@ export class ModelosComponent implements OnInit {
           const animationContainer6 = document.getElementById('lineaTexto2');
 
           if (animationContainer6) {
-            const animation6 = lottie.loadAnimation({ container: animationContainer6, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Iconosinicio/lineaRoja2.json' });
+            const animation6 = lottie.loadAnimation({ container: animationContainer6, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Iconosinicio/lineaRoja.json' });
             animation6.addEventListener('DOMLoaded', () => {
             });
       
@@ -523,7 +523,7 @@ export class ModelosComponent implements OnInit {
           const animationContainer9 = document.getElementById('lineaTexto5');
 
           if (animationContainer9) {
-            const animation9 = lottie.loadAnimation({ container: animationContainer9, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
+            const animation9 = lottie.loadAnimation({ container: animationContainer9, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Iconosinicio/lineaRoja2.json' });
             animation9.addEventListener('DOMLoaded', () => {
             });
       
@@ -534,7 +534,7 @@ export class ModelosComponent implements OnInit {
           const animationContainer8 = document.getElementById('lineaTexto4');
 
           if (animationContainer8) {
-            const animation8 = lottie.loadAnimation({ container: animationContainer8, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
+            const animation8 = lottie.loadAnimation({ container: animationContainer8, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Iconosinicio/lineaRoja.json' });
             animation8.addEventListener('DOMLoaded', () => {
             });
       
@@ -546,6 +546,18 @@ export class ModelosComponent implements OnInit {
         if(scrollYPos > 1100 && this.banderaLinea3 == true){
 
           this.banderaLinea3 = false;
+
+
+          const animationContainer8 = document.getElementById('lineaTexto6');
+
+          if (animationContainer8) {
+            const animation8 = lottie.loadAnimation({ container: animationContainer8, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Iconosinicio/lineaRoja.json' });
+            animation8.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation8.setSpeed(0.2);
+      
+          }
 
           const animationContainer4 = document.getElementById('lineach');
 
