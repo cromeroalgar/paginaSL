@@ -27,124 +27,170 @@
     </div>
     <!-- Fin  slider  --> 
 
-    
 
     <div class="row">
 
       <div class="container">
-  
+
          
-  
+
         <!-- Primera fila -->
-        <div class="row">
-            <div class="col-md-12 subtitleMain" style="background-color: transparent;">
-                <div class="card custom-card border-0" style="background-color: transparent; text-align: center;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
-                  
-        
-                        <strong><p class="consultora" style="line-height: 1; "><span style="margin-left: -150px;">DESARROLAMOS UN MODELO DE</span> <br><span style="font-size: 35px; margin-left: 70px;">CONSULTORÍA ÚNICO Y POTENTE</span> 
-                     
-                        </p>
-                      </strong>
-                   
-                </div>
-            </div>
-            
-        </div>
+             <div class="row">
+              <div class="col-md-12" style="background-color: transparent;">
+                  <div class="card custom-card border-0" style="background-color: transparent; text-align: center;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
+                    
+          
+                          <strong><p class="consultora" style="line-height: 1; font-family: BebasNeueBold;"><span style="margin-left: -150px; font-size: 35px;">DESARROLAMOS UN MODELO DE</span> <br><span style="font-size: 40px; margin-left: 70px;">CONSULTORÍA ÚNICO Y POTENTE</span> 
+                       
+                          </p>
+                        </strong>
+
+                        <br>
+
+                        <span style="text-transform: none; color: gray;">Según el reto, logrando soluciones únicas que agilizan resultados <br> definiendo caminos para la toma de deciciones oportunas.</span>
   
-           <!-- Segunda fila -->
-           <div class="row" style="margin-top: -10px;">
-            <div class="col-md-4" style="cursor: pointer;" (click)="mostrarPantalla()">
-                <div class="card plan cartas" [ngClass]="{ 'ocultar': !cartaPantalla }" id="cerebro2x">
-              
-                    <div class="card-body plan-card-body text-center" style=" padding-top: 140px;">
-                    
-                      <p style="font-size: 30px; line-height: 1; font-family: BebasNeueBold;">DISCOVERY & <br> BUSINESS</p>
-                      
-                      
-                    </div>
-                </div>
-                <div style="border: 3px solid #DC1A4D;" class="card plan cartas" [ngClass]="{ 'ocultar': cartaPantalla }" id="cerebro2Info">
-              
-                  <div class="card-body plan-card-body" style=" padding-top: 33px; padding-bottom: 14px;">
-                  
-                    <ul>
-                      <li>Talleres</li> <br>
-                      <li>Charlas / Conferencias</li> <br>
-                      <li>Safaris</li>
-                    </ul>
-                    
+                     
                   </div>
               </div>
+              
+          </div>
+                     
+           <!-- Segunda fila -->
+           <div class="row" style="margin-top: -60px;">
+            <div class="col-md-4" style="cursor: pointer;" (click)="mostrarPantalla()">
+
+                <div class="card plan custom-card cartas text-center" [ngClass]="{ 'ocultar': !cartaPantalla }" style="padding: auto;" id="card_plan_1">
+                
+                  
+                  <span style="width: 120px; margin-top: -5px; margin-right: 60px;" class="logo" id="robot" alt="Logotipo"></span>
+
+                    <div class="card-body plan-card-body" style=" padding-top: 47px;">
+                    
+                      <img width="100px" src="assets/imagenes/soluciones/Recurso2Soluciones.svg" alt="">
+                        
+                      <p style="font-size: 30px; line-height: 1; font-family: BebasNeueBold; padding-top: 20px; color: blue;">DISCOVERY & <br> BUSINESS</p>
+                      
+                     
+                      
+                    </div>
+
+                    
+                 
+                </div>
+
+                <div  class="card plan custom-card cartas" [ngClass]="{ 'ocultar': cartaPantalla }" style="padding: auto; border: 3px solid blue;" id="card_plan_1">
+                
+                  
+                    <div  class="card-body plan-card-body" style=" padding-top: 67px; padding-bottom: 74px;">
+                    
+                        
+                      <ul style="margin-left: -20px;">
+                        <li>Talleres</li> <br>
+                        <li>Charlas / Conferencias</li> <br>
+                        <li>Safaris</li>
+                      </ul>
+                      
+                    </div>
+
+                    
+                 
+                </div>
+
             </div>
 
             <div class="col-md-4" style="cursor: pointer;" (click)="mostrarTuerca()">
-  
-              <div class="card plan cartas " id="card_plan_1" [ngClass]="{ 'ocultar': !cartaTuerca }">
-               
-                  <div class="card-body plan-card-body text-center" style=" padding-top: 140px;">
-                 
-                    
-                    <p style="font-size: 30px; line-height: 1; font-family: BebasNeueBold;">PEOPLE & <br>TRANSFORMATION</p>
-                      
-                  </div>
-              </div>
-  
-              <div style="border: 3px solid #DC1A4D;" class="card plan cartas" [ngClass]="{ 'ocultar': cartaTuerca }">
+
+              <div class="card plan custom-card cartas text-center" [ngClass]="{ 'ocultar': !cartaTuerca }" style="padding: auto;" id="card_plan_1">
               
-                <div class="card-body plan-card-body" style=" padding-top: 80px; padding-bottom: 56px;">
                 
-                  <ul>
-                    <li>Research & Data Analitycs</li> <br>
-                    <li>Intervención</li> <br>
-                    <li>Monitoreo</li>
-                  </ul>
+                <span style="width: 120px; margin-top: -5px; margin-right: 60px;" class="logo" id="robot" alt="Logotipo"></span>
+
+                  <div class="card-body plan-card-body" style=" padding-top: 47px;">
+                  
+                    <img width="100px" style="padding-top: -20px;" src="assets/imagenes/soluciones/Recurso3Soluciones.svg" alt="">
+                      
+                    <p style="font-size: 30px; line-height: 1; font-family: BebasNeueBold; padding-top: 20px; color: blue;">PEOPLE & <br> TRANSFORMATION</p>
+                    
+                   
+                    
+                  </div>
+
+                  
+               
+              </div>
+
+              <div  class="card plan custom-card cartas" [ngClass]="{ 'ocultar': cartaTuerca }" style="padding: auto; border: 3px solid blue;" id="card_plan_1">
+              
+                
+                  <div  class="card-body plan-card-body" style=" padding-top: 67px; padding-bottom: 54px;">
+                  
+                      
+                    <ul style="margin-left: -20px;">
+                      <li>Research & Data Analitycs</li> <br>
+                      <li>Intervención</li> <br>
+                      <li>Monitoreo</li>
+                    </ul>
+                    
+                  </div>
+
+                  
+               
+              </div>
+
+          </div>
+
+          <div class="col-md-4" style="cursor: pointer;" (click)="mostrarCabeza()">
+
+            <div class="card plan custom-card cartas text-center" [ngClass]="{ 'ocultar': !cartaCabeza }" style="padding: auto;" id="card_plan_1">
+            
+              
+                <div class="card-body plan-card-body" style=" padding-top: 35px;">
+                
+                  <img width="100px" src="assets/imagenes/soluciones/Recurso1Soluciones.svg" alt="">
+                    
+                  <p style="font-size: 30px; line-height: 1; font-family: BebasNeueBold; padding-top: 20px; color: blue;">INSPIRATION & <br> PROVOCATION</p>
+                  
+                 
                   
                 </div>
-            </div>
-  
-            </div>
-  
-            <div class="col-md-4" style="cursor: pointer;" (click)="mostrarCabeza()">
-  
-              <div class="card plan cartas " id="card_plan_1" [ngClass]="{ 'ocultar': !cartaCabeza }">
+
                 
+             
+            </div>
+
+            <div  class="card plan custom-card cartas" [ngClass]="{ 'ocultar': cartaCabeza }" style=" border: 3px solid blue;" id="card_plan_1">
             
-                  <div class="card-body plan-card-body text-center" style=" padding-top: 140px;">
-                  
-                    
-                    <p style="font-size: 30px; line-height: 1; font-family: BebasNeueBold;">INSPIRATION &<br>PROVOCATION</p>
-                              
-                  </div>
-  
-              </div>
-  
-              <div style="border: 3px solid #DC1A4D;" class="card plan cartas" [ngClass]="{ 'ocultar': cartaCabeza }">
               
-                <div class="card-body plan-card-body" style=" padding-top: 27px;">
+                <div  class="card-body plan-card-body">
                 
-                  <ul>
+                    
+                  <ul style="margin-left: -20px;">
                     <li>Research & Data Analitycs</li> <br>
                     <li>Activación Estratégica (Branding, Comunicación e Innovación)</li> <br>
                     <li>Monitoreo (Tendencias, categorías, códigos, productos)</li>
                   </ul>
-
+                  
                 </div>
+
+                
+             
             </div>
-  
-          </div>
-  
-  
+
+        </div>  
+
         </div>
-  
-  
-  
+
+
+
+
         <br>
-  
-        <br>
-  
+
       </div>
-  
+
     </div>
+    
+
+   
 
 
     
