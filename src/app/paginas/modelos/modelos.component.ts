@@ -719,6 +719,67 @@ export class ModelosComponent implements OnInit {
 
           this.banderaLinea3 = false;
 
+          const animation6sombreros = document.getElementById('6sombreros');
+
+          if (animation6sombreros) {
+            const animation3 = lottie.loadAnimation({ container: animation6sombreros, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/6sombreros.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationGamificacion = document.getElementById('gamificacion');
+
+          if (animationGamificacion) {
+            const animation3 = lottie.loadAnimation({ container: animationGamificacion, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/gamificacion.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationRastreo = document.getElementById('rastreo');
+
+          if (animationRastreo) {
+            const animation3 = lottie.loadAnimation({ container: animationRastreo, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/rastreo.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationRealidadVirtual = document.getElementById('realidadVirtual');
+
+          if (animationRealidadVirtual) {
+            const animation3 = lottie.loadAnimation({ container: animationRealidadVirtual, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/realidadVirtual.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+          
+          const animationSocial = document.getElementById('social');
+
+          if (animationSocial) {
+            const animation3 = lottie.loadAnimation({ container: animationSocial, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/social.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+                 
+          const animationScp = document.getElementById('scp');
+
+          if (animationScp) {
+            const animation3 = lottie.loadAnimation({ container: animationScp, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/scp.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
 
           const animationContainer8 = document.getElementById('lineaTexto6');
 
