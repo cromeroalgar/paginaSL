@@ -378,6 +378,7 @@ export class ModelosComponent implements OnInit {
    
     window.scrollTo(0, 0);
 
+  
     const animationContainer = document.getElementById('reloj');
   
     if (animationContainer) {
@@ -457,6 +458,7 @@ export class ModelosComponent implements OnInit {
 
   banderaLinea1 = true;
 
+  banderaLinea4 = true;
   
   banderaLinea2 = true;
 
@@ -502,6 +504,52 @@ export class ModelosComponent implements OnInit {
       
           }
       
+
+        }
+
+        if (scrollYPos > 760 && this.banderaLinea4 == true){
+
+          this.banderaLinea4 = false;
+
+          const animationConexion = document.getElementById('conexion');
+
+          if (animationConexion) {
+            const animation3 = lottie.loadAnimation({ container: animationConexion, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/conexion.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationPosicionamiento = document.getElementById('posicionamiento');
+
+          if (animationPosicionamiento) {
+            const animation3 = lottie.loadAnimation({ container: animationPosicionamiento, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/posicionamiento.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationInnovacion = document.getElementById('innovacion');
+
+          if (animationInnovacion) {
+            const animation3 = lottie.loadAnimation({ container: animationInnovacion, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/innovacion.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationCultura = document.getElementById('cultura');
+
+          if (animationCultura) {
+            const animation3 = lottie.loadAnimation({ container: animationCultura, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/cultura.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
 
         }
 

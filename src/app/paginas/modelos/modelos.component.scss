@@ -183,9 +183,26 @@
     margin-top: 30px;
     margin-left: 60px; /* Utilizamos un porcentaje para el padding */
     font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
-    z-index: 2;
+    z-index: 1;
     background-color: transparent;
     text-align: left;
+}
+
+
+.texto-superpuesto3Info {
+  position: absolute;
+  top: 9%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 60px; /* Utilizamos un porcentaje para el padding */
+  font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 2;
+  background-color: transparent;
+  text-align: left;
 }
 
 .texto-superpuestoG1 {
@@ -396,6 +413,22 @@ top: 40%;
   text-align: left;
 }
 
+.texto-superpuesto4Info {
+  position: absolute;
+  top: 26%;
+  left: 60.7%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 60px; /* Utilizamos un porcentaje para el padding */
+  font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 2;
+  background-color: transparent;
+  text-align: left;
+}
+
 .texto-superpuesto5 {
   position: absolute;
   top: 62.5%;
@@ -412,6 +445,22 @@ top: 40%;
   text-align: left;
 }
 
+.texto-superpuesto5Info {
+  position: absolute;
+  top: 62.5%;
+  left: 60.7%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 60px; /* Utilizamos un porcentaje para el padding */
+  font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 2;
+  background-color: transparent;
+  text-align: left;
+}
+
 .texto-superpuesto6 {
   position: absolute;
   top: 79.5%;
@@ -424,6 +473,22 @@ top: 40%;
   margin-left: 60px; /* Utilizamos un porcentaje para el padding */
   font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
   z-index: 1;
+  background-color: transparent;
+  text-align: left;
+}
+
+.texto-superpuesto6Info {
+  position: absolute;
+  top: 79.5%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 60px; /* Utilizamos un porcentaje para el padding */
+  font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+  z-index: 2;
   background-color: transparent;
   text-align: left;
 }
