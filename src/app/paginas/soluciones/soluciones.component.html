@@ -217,47 +217,84 @@
 
             <div class="col-md-6">
                 
-              <div class="card plan cartas" style="padding-top: 10px; padding-bottom: 10px; margin-top: 50px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
+              <div *ngIf="!infoDiscovery" class="card plan cartas" style="padding-top: 20px; padding-bottom: 20px; margin-top: 50px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
                 
-                  <img style="width: 150px; margin-left: 35px;" src="assets/imagenes/soluciones/Recurso5Soluciones.svg" alt="">
-               
-                
-                
-
-                <img class="logo" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+                  <img style="width: 150px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso7Soluciones.svg" alt="">
+         
+                <img (click)="mostrarInfoDiscovery()" class="logo" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
              
             </div>
 
-
-            <div class="card plan cartas" style=" cursor: pointer;padding-top: 10px; padding-bottom: 10px; margin-top: -30px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
-              <img style="width: 150px; margin-left: 35px;" src="assets/imagenes/soluciones/Recurso5Soluciones.svg" alt="">
-               
+            <div *ngIf="infoDiscovery" class="card plan cartas" style="padding-top: 20px; padding-bottom: 10px; margin-top: 50px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
                 
-                
+              <img style="width: 150px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso7Soluciones.svg" alt="">
+     
+              <p style="padding-left: 20px; padding-right: 10px; padding-top: 20px;">textoryryryryyryryryyryryryryyryryryryyryryryryyryryryryryryyryryryryryyryryryryryyryryryryyryryryryyryryryryryyryr</p>
 
-              <img class="logo" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
-           
-          </div>
+              <p class="text-right" style="margin-right: 10px; color: blue; cursor: pointer;">Ver más</p>
 
-          <div class="card plan cartas" style=" cursor: pointer;padding-top: 20px; padding-bottom: 20px; margin-top: -30px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
-            <img style="width: 150px; margin-left: 35px;" src="assets/imagenes/soluciones/Recurso6Soluciones.svg" alt="">
-               
-                
-                
-
-            <img class="logo" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+            <img class="logo" (click)="mostrarInfoDiscovery()" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
          
         </div>
 
-        <div class="card plan cartas" style=" cursor: pointer;padding-top: 20px; padding-bottom: 20px; margin-top: -30px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
-          <img style="width: 150px; margin-left: 35px;" src="assets/imagenes/soluciones/Recurso7Soluciones.svg" alt="">
-               
-                
-                
 
-          <img class="logo" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+
+            <div *ngIf="!infoStrategy" class="card plan cartas" style=" cursor: pointer;padding-top: 10px; padding-bottom: 10px; margin-top: -30px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
+              <img style="width: 150px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso5Soluciones.svg" alt="">
+          
+              <img (click)="mostrarInfoStrategy()" class="logo" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+           
+          </div>
+
+          <div *ngIf="infoStrategy" class="card plan cartas" style="padding-top: 20px; padding-bottom: 10px; margin-top: -30px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
+                
+            <img style="width: 150px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso5Soluciones.svg" alt="">
+   
+            <p style="padding-left: 20px; padding-right: 10px; padding-top: 20px;">textoryryryryyryryryyryryryryyryryryryyryryryryyryryryryryryyryryryryryyryryryryryyryryryryyryryryryyryryryryryyryr</p>
+
+            <p class="text-right" style="margin-right: 10px; color: blue; cursor: pointer;">Ver más</p>
+
+          <img (click)="mostrarInfoStrategy()" class="logo" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
        
       </div>
+
+          <div *ngIf="!infoKnow" class="card plan cartas" style=" cursor: pointer;padding-top: 20px; padding-bottom: 20px; margin-top: -30px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
+            <img style="width: 150px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso6Soluciones.svg" alt="">
+           
+            <img class="logo" (click)="mostrarInfoKnow()" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+         
+        </div>
+
+        <div *ngIf="infoKnow" class="card plan cartas" style="padding-top: 20px; padding-bottom: 10px; margin-top: -30px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
+                
+          <img style="width: 150px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso6Soluciones.svg" alt="">
+ 
+          <p style="padding-left: 20px; padding-right: 10px; padding-top: 20px;">textoryryryryyryryryyryryryryyryryryryyryryryryyryryryryryryyryryryryryyryryryryryyryryryryyryryryryyryryryryryyryr</p>
+
+          <p class="text-right" style="margin-right: 10px; color: blue; cursor: pointer;">Ver más</p>
+
+        <img class="logo" (click)="mostrarInfoKnow()" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+     
+    </div>
+
+        <div *ngIf="!infoAlig" class="card plan cartas" style=" cursor: pointer;padding-top: 20px; padding-bottom: 20px; margin-top: -30px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
+          <img style="width: 150px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso7Soluciones.svg" alt="">
+    
+          <img class="logo" (click)="mostrarInfoAlig()" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+       
+      </div>
+
+      <div *ngIf="infoAlig" class="card plan cartas" style="padding-top: 20px; padding-bottom: 10px; margin-top: -30px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
+                
+        <img style="width: 150px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso7Soluciones.svg" alt="">
+
+        <p style="padding-left: 20px; padding-right: 10px; padding-top: 20px;">textoryryryryyryryryyryryryryyryryryryyryryryryyryryryryryryyryryryryryyryryryryryyryryryryyryryryryyryryryryryyryr</p>
+
+        <p class="text-right" style="margin-right: 10px; color: blue; cursor: pointer;">Ver más</p>
+
+      <img class="logo" (click)="mostrarInfoAlig()" style="width: 30px; margin-top: 20px; padding-right: 5px; cursor: pointer; position: absolute; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+   
+  </div>
 
 
 

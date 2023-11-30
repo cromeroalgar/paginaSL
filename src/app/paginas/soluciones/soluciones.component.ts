@@ -30,6 +30,11 @@ export class SolucionesComponent implements OnInit {
   infoEmpresas: boolean = false;
   espacioRojo: boolean = true;
 
+  infoDiscovery: boolean = false;
+  infoStrategy: boolean = false;
+  infoKnow: boolean = false;
+  infoAlig: boolean = false;
+
   cartaPantalla: boolean = true;
   cartaTuerca: boolean = true;
   cartaCabeza: boolean = true;
@@ -148,6 +153,51 @@ export class SolucionesComponent implements OnInit {
       this.espacioRojo = false;
     }
   }
+
+  mostrarInfoDiscovery(){
+
+    this.infoDiscovery = !this.infoDiscovery;
+    this.infoAlig = false;
+    this.infoKnow = false;
+    this.infoStrategy = false;
+
+  }
+
+
+
+  
+  mostrarInfoStrategy(){
+
+    
+    this.infoDiscovery = false;
+    this.infoAlig = false;
+    this.infoKnow = false;
+    this.infoStrategy = !this.infoStrategy;
+
+  }
+
+  mostrarInfoKnow(){
+
+    this.infoDiscovery = false;
+    this.infoAlig = false;
+    this.infoKnow = !this.infoKnow;
+    this.infoStrategy = false;
+
+  }
+
+
+
+  
+  mostrarInfoAlig(){
+
+    this.infoDiscovery = false;
+    this.infoAlig = !this.infoAlig;
+    this.infoKnow = false;
+    this.infoStrategy = false;
+
+  }
+
+
 
   ngOnInit(): void {    
 
