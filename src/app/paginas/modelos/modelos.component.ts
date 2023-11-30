@@ -558,6 +558,129 @@ export class ModelosComponent implements OnInit {
 
           this.banderaLinea2 = false;
 
+          const animationBombillo = document.getElementById('bombillo');
+
+          if (animationBombillo) {
+            const animation3 = lottie.loadAnimation({ container: animationBombillo, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/bombillo.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationCorona = document.getElementById('corona');
+
+          if (animationCorona) {
+            const animation3 = lottie.loadAnimation({ container: animationCorona, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/corona.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationCorazon = document.getElementById('corazon');
+
+          if (animationCorazon) {
+            const animation3 = lottie.loadAnimation({ container: animationCorazon, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/corazon.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationCorazones = document.getElementById('corazones');
+
+          if (animationCorazones) {
+            const animation3 = lottie.loadAnimation({ container: animationCorazones, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/corazones.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationMago = document.getElementById('mago');
+
+          if (animationMago) {
+            const animation3 = lottie.loadAnimation({ container: animationMago, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/mago.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationBufon = document.getElementById('bufon');
+
+          if (animationBufon) {
+            const animation3 = lottie.loadAnimation({ container: animationBufon, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/bufon.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationCasa = document.getElementById('casa');
+
+          if (animationCasa) {
+            const animation3 = lottie.loadAnimation({ container: animationCasa, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/casa.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationMedalla = document.getElementById('medalla');
+
+          if (animationMedalla) {
+            const animation3 = lottie.loadAnimation({ container: animationMedalla, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/medalla.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationPaisaje = document.getElementById('paisaje');
+
+          if (animationPaisaje) {
+            const animation3 = lottie.loadAnimation({ container: animationPaisaje, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/paisaje.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationBuho = document.getElementById('buho');
+
+          if (animationBuho) {
+            const animation3 = lottie.loadAnimation({ container: animationBuho, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/buho.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          
+          const animationFlor = document.getElementById('flor');
+
+          if (animationFlor) {
+            const animation3 = lottie.loadAnimation({ container: animationFlor, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/flor.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+          const animationManoEstrella = document.getElementById('manoEstrella');
+
+          if (animationManoEstrella) {
+            const animation3 = lottie.loadAnimation({ container: animationManoEstrella, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/manoEstrella.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.3);
+          }
+
+
+
           const animationContainer7 = document.getElementById('lineaTexto3');
 
           if (animationContainer7) {
