@@ -77,8 +77,7 @@ h1, h2, h3, h4 {
 
 .btn-primary {
   color: #fff;
-  background-color: #E54F16;
-  border-color: #E54F16;
+
 }
 
 .btn-primary:hover {
@@ -102,9 +101,7 @@ h1, h2, h3, h4 {
   color: #FFFFFF;
 }
 
-.btn-terciary:hover {
-  background-color: #E54F16;
-}
+
 
 .btn-light {
   color: #565758;
@@ -139,9 +136,7 @@ h1, h2, h3, h4 {
   -moz-border-radius: 16px;
 }
 
-.btn.naranja {
-  background: #E54F16;
-}
+
 
 .btn.morado {
   background: #5D2D88;
@@ -178,16 +173,10 @@ h1, h2, h3, h4 {
 }
 
 .alert-warning .alert_inner {
-  border: 2px solid #E54F16;
+  border: 2px solid;
 }
 
-.alert-warning .alert_inner strong {
-  color: #E54F16;
-}
 
-.alert-warning .alert_inner:before {
-  color: #E54F16;
-}
 
 .alert-success .alert_inner {
   border: 2px solid #80C342;
@@ -252,7 +241,7 @@ header .ike_compensar .row {
 }
 
 header .ike_compensar .col1 {
-  border-right: 1px solid #E54F16;
+  border-right: 1px solid;
 }
 
 header a {
@@ -268,7 +257,6 @@ header .navegacion {
 }
 
 header .navegacion .navbar-toggler i {
-  color: #E54F16;
   font-size: 1.7em;
   padding-top: 13px;
   padding-bottom: 5px;
@@ -350,9 +338,7 @@ header .nav-nav {
   color: #3D75BD;
 }
 
-.titulos .naranja {
-  color: #E54F16;
-}
+
 
 .titulos .blanco {
   color: #ffffff;
@@ -448,8 +434,8 @@ header .nav-nav {
 }
 
 .carouselIKE .carousel-indicators li.active {
-  background-color: #E54F16;
-  border: 2px solid #E54F16;
+
+  border: 2px solid ;
 }
 
 .carouselIKE .carousel-control-prev {
@@ -588,9 +574,7 @@ header .nav-nav {
   margin-bottom: 2px;
 }
 
-.botones_filter .btn-primary:hover {
-  color: #E54F16;
-}
+
 
 .botones_filter .btn-primary.active {
   background-color: #09427A !important;
@@ -619,7 +603,6 @@ header .nav-nav {
 .servicios_ad_grid .precio span {
   font-size: .5em;
   font-weight: initial;
-  color: #E54F16;
 }
 
 .servicios_ad_grid .card-body {
@@ -627,7 +610,7 @@ header .nav-nav {
 }
 
 .servicios_ad_grid .card-title {
-  color: #E54F16;
+
   margin-top: 1em;
   margin-bottom: 0;
 }
@@ -651,7 +634,7 @@ header .nav-nav {
 }
 
 .planes_medida .card-value {
-  color: #E54F16;
+
   font-size: 1.6em;
 }
 
@@ -755,9 +738,7 @@ header .nav-nav {
   -webkit-border-radius: 50% 50% 50% 50%;
 }
 
-.modal_planes .modal-content .modal-body .modal-title {
-  color: #E54F16;
-}
+
 
 .modal_planes .modal-content .modal-body .modal-title img {
   /*height: 50px;*/
@@ -803,7 +784,6 @@ header .nav-nav {
 .modal_planes .modal-content .modal-body .total .colf3 {
   font-weight: bold;
   font-size: 2em;
-  color: #E54F16;
   text-align: right;
 }
 
@@ -869,7 +849,7 @@ header .nav-nav {
 }
 
 .serv_add_body .modal-body .subservicio {
-  color: #E54F16;
+
   padding: 0 1em 0 0;
 }
 
@@ -883,9 +863,7 @@ header .nav-nav {
   font-size: 4em;
 }
 
-.serv_add_body .modal-body .precio p {
-  color: #E54F16;
-}
+
 
 .serv_add_body .modal-body .informacion h4 {
   font-size: 1.3em;
@@ -901,7 +879,7 @@ header .nav-nav {
 }
 
 #accordionIKE .titulos h2 {
-  border-bottom: 1px solid #E54F16;
+  border-bottom: 1px solid;
   padding-bottom: 20px;
   font-weight: 700;
 }
@@ -948,7 +926,6 @@ header .nav-nav {
 }
 
 #accordionIKE .interrogacion {
-  background: #E54F16;
   color: #ffffff;
   border-radius: 50%;
   height: 40px;
@@ -976,7 +953,6 @@ header .nav-nav {
 
 #pqr .titulos_l .tt {
   align-self: center;
-  color: #E54F16;
   justify-content: center;
   text-align: center;
 }
@@ -1015,17 +991,13 @@ header .nav-nav {
   font-weight: bold;
 }
 
-#pqr .form button:hover {
-  background: #E54F16;
-  border-color: #E54F16;
-}
+
 
 .formas .form input, .formas .form textarea, .formas .form select {
   border-radius: 18px 18px 18px 18px;
   -moz-border-radius: 18px 18px 18px 18px;
   -webkit-border-radius: 18px 18px 18px 18px;
   color: #565758;
-  border-color: #E54F16;
   padding-left: 12px;
 }
 
@@ -1063,7 +1035,7 @@ footer .ike_compensar .row {
 }
 
 footer .ike_compensar .col1 {
-  border-right: 1px solid #E54F16;
+  border-right: 1px solid;
 }
 
 footer .ike_compensar .col2 img {
@@ -1095,7 +1067,6 @@ footer .menu2 ul li a span {
   content: '';
   height: 6px;
   width: 6px;
-  background: #E54F16;
   display: inline-block;
   transform: rotate(45deg);
   margin-right: 5px;
@@ -1174,7 +1145,6 @@ footer .l_oscura h3 {
 }
 
 #myBtn:hover {
-  background-color: #E54F16;
   color: #FFFFFF;
 }
 
@@ -1209,7 +1179,6 @@ footer .l_oscura h3 {
 }
 
 .shopping .badge-notify {
-  background: #E54F16;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1220,7 +1189,6 @@ footer .l_oscura h3 {
   min-width: 28px;
 }
 .badgeP {
-  background: #E54F16;
   position: absolute; 
   bottom: -20px;
   right: 0;
@@ -1323,7 +1291,6 @@ footer .l_oscura h3 {
 }
 
 .modal_cart_ike table .col1 h4 {
-  color: #E54F16;
   padding-left: 15px;
   margin-bottom: 0;
 }
@@ -1424,9 +1391,7 @@ footer .l_oscura h3 {
   margin-right: 1.2em;
 }
 
-#comprador_forma #enviar_titular:hover {
-  background: #E54F16;
-}
+
 
 #comprador_forma .form-group {
   margin-bottom: 0;
@@ -1738,7 +1703,7 @@ footer .l_oscura h3 {
  
 }
 .box-card-inner:hover{
-  box-shadow:  0 0.5em 0.5em -0.4em #E54F16;
+  box-shadow:  0 0.5em 0.5em -0.4em;
 
 }
 .text-line-one{
@@ -1775,7 +1740,6 @@ footer .l_oscura h3 {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #E54F16;
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {
