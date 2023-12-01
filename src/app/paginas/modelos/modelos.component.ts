@@ -469,6 +469,8 @@ export class ModelosComponent implements OnInit {
         // Obtener la posición actual del scroll en el eje Y
         const scrollYPos = window.scrollY || window.pageYOffset;
 
+        console.log(scrollYPos)
+
         if (scrollYPos < 550){
           if (this.banner) {
             this.banner.nativeElement.style.display = 'none';
@@ -507,7 +509,7 @@ export class ModelosComponent implements OnInit {
 
         }
 
-        if (scrollYPos > 760 && this.banderaLinea4 == true){
+        if (scrollYPos > 1200 && this.banderaLinea4 == true){
 
           this.banderaLinea4 = false;
 
@@ -554,7 +556,7 @@ export class ModelosComponent implements OnInit {
         }
 
         
-        if(scrollYPos > 1700 && this.banderaLinea2 == true){
+        if(scrollYPos > 1900 && this.banderaLinea2 == true){
 
           this.banderaLinea2 = false;
 
@@ -715,7 +717,7 @@ export class ModelosComponent implements OnInit {
           }
         }
 
-        if(scrollYPos > 1100 && this.banderaLinea3 == true){
+        if(scrollYPos > 3130 && this.banderaLinea3 == true){
 
           this.banderaLinea3 = false;
 
