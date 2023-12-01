@@ -27,7 +27,7 @@
 }
 
 .delay-2 {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .delay-3 {
@@ -105,6 +105,20 @@
         background-color: transparent;
         text-align: left;
     }
+
+    .texto-superpuesto-blog {
+      position: absolute;
+      top: -5%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 5px;
+      font-size: 70px; /* Utilizamos un porcentaje para el tamaño de fuente */
+      z-index: 1;
+      background-color: transparent;
+      text-align: left;
+  }
 
     .texto-superpuestoTituloBanner {
       position: absolute;
