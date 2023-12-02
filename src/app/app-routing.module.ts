@@ -28,6 +28,12 @@ const routes: Routes = [
 
 },
 
+{ 
+  path: 'blog-card', 
+  loadChildren: () => import('./paginas/blog-card/blog-card.module').then(m => m.BlogCardModule)
+
+},
+
 
  {
   path: '', redirectTo: '/nosotros', pathMatch: 'full',  
