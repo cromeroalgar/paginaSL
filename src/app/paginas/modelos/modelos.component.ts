@@ -509,7 +509,7 @@ export class ModelosComponent implements OnInit {
 
         }
 
-        if (scrollYPos > 905 && this.banderaLinea4 == true){
+        if (scrollYPos > 925 && this.banderaLinea4 == true){
 
           this.banderaLinea4 = false;
 
@@ -556,7 +556,7 @@ export class ModelosComponent implements OnInit {
         }
 
         
-        if(scrollYPos > 1900 && this.banderaLinea2 == true){
+        if(scrollYPos > 1840 && this.banderaLinea2 == true){
 
           this.banderaLinea2 = false;
 
