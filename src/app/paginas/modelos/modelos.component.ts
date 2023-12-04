@@ -567,7 +567,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.1);
           }
 
           const animationCorona = document.getElementById('corona');
@@ -577,7 +577,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.2);
           }
 
           const animationCorazon = document.getElementById('corazon');
@@ -587,7 +587,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.2);
           }
 
           const animationCorazones = document.getElementById('corazones');
@@ -607,7 +607,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.5);
           }
 
           const animationBufon = document.getElementById('bufon');
@@ -617,7 +617,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.4);
           }
 
           const animationCasa = document.getElementById('casa');
@@ -627,7 +627,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.4);
           }
 
           const animationMedalla = document.getElementById('medalla');
@@ -637,7 +637,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.6);
           }
 
           const animationPaisaje = document.getElementById('paisaje');
@@ -647,7 +647,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.6);
           }
 
           const animationBuho = document.getElementById('buho');
@@ -657,7 +657,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.7);
           }
 
           
@@ -666,10 +666,14 @@ export class ModelosComponent implements OnInit {
           if (animationFlor) {
             const animation3 = lottie.loadAnimation({ container: animationFlor, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/flor.json' });
             animation3.addEventListener('DOMLoaded', () => {
+
+
+
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.8);
           }
+
 
           const animationManoEstrella = document.getElementById('manoEstrella');
 
@@ -678,7 +682,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.4);
           }
 
 
