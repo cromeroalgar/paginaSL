@@ -509,7 +509,7 @@ export class ModelosComponent implements OnInit {
 
         }
 
-        if (scrollYPos > 1200 && this.banderaLinea4 == true){
+        if (scrollYPos > 905 && this.banderaLinea4 == true){
 
           this.banderaLinea4 = false;
 
@@ -520,7 +520,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.5);
           }
 
           const animationPosicionamiento = document.getElementById('posicionamiento');
@@ -530,7 +530,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.4);
           }
 
           const animationInnovacion = document.getElementById('innovacion');
@@ -550,7 +550,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.2);
           }
 
         }
