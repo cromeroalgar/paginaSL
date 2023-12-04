@@ -60,11 +60,12 @@ export class ModelosComponent implements OnInit {
   @ViewChild('ecuador') ecuador!: ElementRef;
 
   @ViewChild('peru') peru!: ElementRef;
-  @ViewChild('chile') chile!: ElementRef;
-  @ViewChild('argentina') argentina!: ElementRef;
-  @ViewChild('dominicana') dominicana!: ElementRef;
-  @ViewChild('guatemala') guatemala!: ElementRef;
-  @ViewChild('salvador') salvador!: ElementRef;
+  @ViewChild('gamificacion') gamificacion!: ElementRef;
+  @ViewChild('social') social!: ElementRef;
+  @ViewChild('scp') scp!: ElementRef;
+  @ViewChild('sombres') sombres!: ElementRef;
+  @ViewChild('rastreo') rastreo!: ElementRef;
+  @ViewChild('realidadVirtual') realidadVirtual!: ElementRef;
   @ViewChild('panama') panama!: ElementRef;
   @ViewChild('honduras') honduras!: ElementRef;
 
@@ -386,7 +387,7 @@ export class ModelosComponent implements OnInit {
       animation1.addEventListener('DOMLoaded', () => {
       });
 
-      animation1.setSpeed(0.3);
+      animation1.setSpeed(0.7);
     }
 
     const animationContainer2 = document.getElementById('posit');
@@ -520,7 +521,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.5);
+            animation3.setSpeed(0.4);
           }
 
           const animationPosicionamiento = document.getElementById('posicionamiento');
@@ -530,7 +531,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.4);
+            animation3.setSpeed(0.3);
           }
 
           const animationInnovacion = document.getElementById('innovacion');
@@ -540,7 +541,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.2);
           }
 
           const animationCultura = document.getElementById('cultura');
@@ -550,13 +551,13 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.2);
+            animation3.setSpeed(0.1);
           }
 
         }
 
         
-        if(scrollYPos > 1840 && this.banderaLinea2 == true){
+        if(scrollYPos > 1770 && this.banderaLinea2 == true){
 
           this.banderaLinea2 = false;
 
@@ -721,70 +722,133 @@ export class ModelosComponent implements OnInit {
           }
         }
 
-        if(scrollYPos > 3130 && this.banderaLinea3 == true){
+        if(scrollYPos > 2970 && this.banderaLinea3 == true){
 
           this.banderaLinea3 = false;
 
           const animation6sombreros = document.getElementById('6sombreros');
+
+
+          timer(1950).subscribe(() => {
 
           if (animation6sombreros) {
             const animation3 = lottie.loadAnimation({ container: animation6sombreros, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/6sombreros.json' });
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.2);
+            if (this.sombres) {
+              this.sombres.nativeElement.style.display = 'block';
+            }
+
+
+
           }
 
+          });
+
+
+          ////////////////////////////////////////////////////////////////
           const animationGamificacion = document.getElementById('gamificacion');
 
           if (animationGamificacion) {
+
+            timer(0).subscribe(() => {
+
+
+
             const animation3 = lottie.loadAnimation({ container: animationGamificacion, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/gamificacion.json' });
             animation3.addEventListener('DOMLoaded', () => {
             });
       
             animation3.setSpeed(0.3);
-          }
+            if (this.gamificacion) {
+              this.gamificacion.nativeElement.style.display = 'block';
+            }
+      
+          });
+          ///////////////////////////////////////////////
+
 
           const animationRastreo = document.getElementById('rastreo');
+
+          timer(2600).subscribe(() => {
+
 
           if (animationRastreo) {
             const animation3 = lottie.loadAnimation({ container: animationRastreo, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/rastreo.json' });
             animation3.addEventListener('DOMLoaded', () => {
             });
-      
-            animation3.setSpeed(0.3);
+            
+            animation3.setSpeed(0.2);
+            if (this.rastreo) {
+              this.rastreo.nativeElement.style.display = 'block';
+            }
+    
           }
 
+          });
+
           const animationRealidadVirtual = document.getElementById('realidadVirtual');
+          
+          timer(3200).subscribe(() => {
+
 
           if (animationRealidadVirtual) {
             const animation3 = lottie.loadAnimation({ container: animationRealidadVirtual, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/realidadVirtual.json' });
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.2);
+            if (this.realidadVirtual) {
+              this.realidadVirtual.nativeElement.style.display = 'block';
+            }
+
+
           }
-          
+
+
+          });
+          ////////////////////////////////////////////////
           const animationSocial = document.getElementById('social');
+
+
+          timer(650).subscribe(() => {
+
+
 
           if (animationSocial) {
             const animation3 = lottie.loadAnimation({ container: animationSocial, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/social.json' });
             animation3.addEventListener('DOMLoaded', () => {
             });
+
+            animation3.setSpeed(0.2);
+            if (this.social) {
+              this.social.nativeElement.style.display = 'block';
+            }
       
-            animation3.setSpeed(0.3);
           }
 
-                 
+          });
+
+          ///////////////////////////////////////////       
           const animationScp = document.getElementById('scp');
+
+          timer(1300).subscribe(() => {
 
           if (animationScp) {
             const animation3 = lottie.loadAnimation({ container: animationScp, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/scp.json' });
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.2);
+            if (this.scp) {
+              this.scp.nativeElement.style.display = 'block';
+            }
+
           }
+
+          });
 
 
           const animationContainer8 = document.getElementById('lineaTexto6');
@@ -884,9 +948,6 @@ export class ModelosComponent implements OnInit {
 
       animation13.setSpeed(0.2);
 
-      if (this.salvador) {
-        this.salvador.nativeElement.style.display = 'block';
-      }
 
     });
 
@@ -925,9 +986,7 @@ export class ModelosComponent implements OnInit {
 
       animation15.setSpeed(0.2);
 
-      if (this.argentina) {
-        this.argentina.nativeElement.style.display = 'block';
-      }
+      
 
     });
 
@@ -966,10 +1025,6 @@ export class ModelosComponent implements OnInit {
 
       animation17.setSpeed(0.2);
 
-      if (this.guatemala) {
-        this.guatemala.nativeElement.style.display = 'block';
-      }
-
     });
 
     }
@@ -987,10 +1042,6 @@ export class ModelosComponent implements OnInit {
       });
 
       animation18.setSpeed(0.2);
-
-      if (this.dominicana) {
-        this.dominicana.nativeElement.style.display = 'block';
-      }
 
     });
 
@@ -1028,9 +1079,7 @@ export class ModelosComponent implements OnInit {
 
       animation20.setSpeed(0.2);
 
-      if (this.chile) {
-        this.chile.nativeElement.style.display = 'block';
-      }
+    
 
     });
 
@@ -1070,4 +1119,4 @@ export class ModelosComponent implements OnInit {
 
 
 
-}
+}}
