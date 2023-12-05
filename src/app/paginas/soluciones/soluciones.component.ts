@@ -307,7 +307,7 @@ export class SolucionesComponent implements OnInit {
           const animationContainer5 = document.getElementById('lineaTexto');
 
           if (animationContainer5) {
-            const animation5 = lottie.loadAnimation({ container: animationContainer5, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
+            const animation5 = lottie.loadAnimation({ container: animationContainer5, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineasoluciones1.json' });
             animation5.addEventListener('DOMLoaded', () => {
             });
       
@@ -329,20 +329,11 @@ export class SolucionesComponent implements OnInit {
         }
 
         
-        if(scrollYPos > 2000 && this.banderaLinea2 == true){
+        if(scrollYPos > 1000 && this.banderaLinea2 == true){
 
           this.banderaLinea2 = false;
 
-          const animationContainer7 = document.getElementById('lineaTexto3');
-
-          if (animationContainer7) {
-            const animation7 = lottie.loadAnimation({ container: animationContainer7, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
-            animation7.addEventListener('DOMLoaded', () => {
-            });
-      
-            animation7.setSpeed(0.5);
-      
-          }
+          
 
           const animationContainer9 = document.getElementById('lineaTexto5');
 
@@ -358,7 +349,7 @@ export class SolucionesComponent implements OnInit {
           const animationContainer8 = document.getElementById('lineaTexto4');
 
           if (animationContainer8) {
-            const animation8 = lottie.loadAnimation({ container: animationContainer8, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
+            const animation8 = lottie.loadAnimation({ container: animationContainer8, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineasoluciones2.json' });
             animation8.addEventListener('DOMLoaded', () => {
             });
       
@@ -367,9 +358,21 @@ export class SolucionesComponent implements OnInit {
           }
         }
 
-        if(scrollYPos > 1100 && this.banderaLinea3 == true){
+        if(scrollYPos > 1800 && this.banderaLinea3 == true){
+
 
           this.banderaLinea3 = false;
+
+          const animationContainer7 = document.getElementById('lineaTexto3');
+
+          if (animationContainer7) {
+            const animation7 = lottie.loadAnimation({ container: animationContainer7, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineasoluciones3.json' });
+            animation7.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation7.setSpeed(0.5);
+      
+          }
 
           const animationContainer4 = document.getElementById('lineach');
 
