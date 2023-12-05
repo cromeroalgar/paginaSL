@@ -510,7 +510,7 @@ export class ModelosComponent implements OnInit {
 
         }
 
-        if (scrollYPos > 975 && this.banderaLinea4 == true){
+        if (scrollYPos > 995 && this.banderaLinea4 == true){
 
           this.banderaLinea4 = false;
 
@@ -521,7 +521,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.311111);
+            animation3.setSpeed(0.281111); 
           }
 
           const animationPosicionamiento = document.getElementById('posicionamiento');
@@ -531,7 +531,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.277777);
+            animation3.setSpeed(0.231111); 
           }
 
           const animationInnovacion = document.getElementById('innovacion');
@@ -541,7 +541,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.222222);
+            animation3.setSpeed(0.191111); 
           }
 
           const animationCultura = document.getElementById('cultura');
@@ -551,13 +551,13 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.166666);
+            animation3.setSpeed(0.151111); 
           }
 
         }
 
         
-        if(scrollYPos > 1770 && this.banderaLinea2 == true){
+        if(scrollYPos > 1880 && this.banderaLinea2 == true){
 
           this.banderaLinea2 = false;
 
@@ -568,7 +568,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.1);
+            animation3.setSpeed(0.17999);
           }
 
           const animationCorona = document.getElementById('corona');
@@ -578,7 +578,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.2);
+            animation3.setSpeed(0.24999);
           }
 
           const animationCorazon = document.getElementById('corazon');
@@ -588,7 +588,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.2);
+            animation3.setSpeed(0.29999);
           }
 
           const animationCorazones = document.getElementById('corazones');
@@ -598,7 +598,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.34999);
           }
 
           const animationMago = document.getElementById('mago');
@@ -608,7 +608,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.5);
+            animation3.setSpeed(0.54999);
           }
 
           const animationBufon = document.getElementById('bufon');
@@ -618,7 +618,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.4);
+            animation3.setSpeed(0.39999);
           }
 
           const animationCasa = document.getElementById('casa');
@@ -628,7 +628,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.4);
+            animation3.setSpeed(0.44999);
           }
 
           const animationMedalla = document.getElementById('medalla');
@@ -638,7 +638,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.6);
+            animation3.setSpeed(0.59999);
           }
 
           const animationPaisaje = document.getElementById('paisaje');
@@ -648,7 +648,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.6);
+            animation3.setSpeed(0.64999);
           }
 
           const animationBuho = document.getElementById('buho');
@@ -658,7 +658,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.7);
+            animation3.setSpeed(0.69999);
           }
 
           
@@ -672,7 +672,7 @@ export class ModelosComponent implements OnInit {
 
             });
       
-            animation3.setSpeed(0.8);
+            animation3.setSpeed(0.74999);
           }
 
 
@@ -683,7 +683,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.4);
+            animation3.setSpeed(0.49999);
           }
 
 
