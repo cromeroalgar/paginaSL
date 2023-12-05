@@ -510,7 +510,7 @@ export class ModelosComponent implements OnInit {
 
         }
 
-        if (scrollYPos > 925 && this.banderaLinea4 == true){
+        if (scrollYPos > 975 && this.banderaLinea4 == true){
 
           this.banderaLinea4 = false;
 
@@ -521,7 +521,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.4);
+            animation3.setSpeed(0.311111);
           }
 
           const animationPosicionamiento = document.getElementById('posicionamiento');
@@ -531,7 +531,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.3);
+            animation3.setSpeed(0.277777);
           }
 
           const animationInnovacion = document.getElementById('innovacion');
@@ -541,7 +541,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.2);
+            animation3.setSpeed(0.222222);
           }
 
           const animationCultura = document.getElementById('cultura');
@@ -551,7 +551,7 @@ export class ModelosComponent implements OnInit {
             animation3.addEventListener('DOMLoaded', () => {
             });
       
-            animation3.setSpeed(0.1);
+            animation3.setSpeed(0.166666);
           }
 
         }
@@ -722,7 +722,7 @@ export class ModelosComponent implements OnInit {
           }
         }
 
-        if(scrollYPos > 2970 && this.banderaLinea3 == true){
+        if(scrollYPos > 3050 && this.banderaLinea3 == true){
 
           this.banderaLinea3 = false;
 
