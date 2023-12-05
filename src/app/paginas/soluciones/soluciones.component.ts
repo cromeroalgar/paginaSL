@@ -204,10 +204,10 @@ export class SolucionesComponent implements OnInit {
     
     window.scrollTo(0, 0);
 
-    const animationCerebro2 = document.getElementById('cerebro2');
+    const animationCerebro2 = document.getElementById('pantalla');
 
     if (animationCerebro2) {
-      const animation3 = lottie.loadAnimation({ container: animationCerebro2, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/cerebro2.json' });
+      const animation3 = lottie.loadAnimation({ container: animationCerebro2, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/pantalla.json' });
       animation3.addEventListener('DOMLoaded', () => {
       });
 
@@ -215,20 +215,20 @@ export class SolucionesComponent implements OnInit {
     }
 
     
-    const animationPluma = document.getElementById('pluma');
+    const animationPluma = document.getElementById('tuerca');
 
     if (animationPluma) {
-      const animation3 = lottie.loadAnimation({ container: animationPluma, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/pluma.json' });
+      const animation3 = lottie.loadAnimation({ container: animationPluma, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/tuerca.json' });
       animation3.addEventListener('DOMLoaded', () => {
       });
 
       animation3.setSpeed(0.4);
     }
 
-    const animationDiana = document.getElementById('diana');
+    const animationDiana = document.getElementById('cerebro3');
 
     if (animationDiana) {
-      const animation3 = lottie.loadAnimation({ container: animationDiana, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/diana.json' });
+      const animation3 = lottie.loadAnimation({ container: animationDiana, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/cabeza3.json' });
       animation3.addEventListener('DOMLoaded', () => {
       });
 
