@@ -224,7 +224,7 @@ export class InicioComponent implements OnInit {
         }
 
         
-        if(scrollYPos > 2000 && this.banderaLinea2 == true){
+        if(scrollYPos > 1960 && this.banderaLinea2 == true){
 
           this.banderaLinea2 = false;
 
@@ -273,7 +273,7 @@ export class InicioComponent implements OnInit {
       animation4.addEventListener('DOMLoaded', () => {
       });
 
-      animation4.setSpeed(0.1);
+      animation4.setSpeed(0.189999);
 
     }
 
@@ -288,7 +288,7 @@ export class InicioComponent implements OnInit {
     animation23.addEventListener('DOMLoaded', () => {
     });
 
-    animation23.setSpeed(0.3);
+    animation23.setSpeed(0.197777);
 
   });
     

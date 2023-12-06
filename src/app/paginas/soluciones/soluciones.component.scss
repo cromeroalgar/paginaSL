@@ -311,7 +311,7 @@
     background: -o-linear-gradient(right, #588990, #17488F); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, #588990, #17488F); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #588990, #17488F); /* Standard syntax */
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     font-weight: bold;
     
@@ -383,7 +383,7 @@
 
 
   .consultora{
-    font-size: 28px;
+    font-size: 8px;
   }
 
   .consultoraH{

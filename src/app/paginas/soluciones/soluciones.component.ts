@@ -329,7 +329,7 @@ export class SolucionesComponent implements OnInit {
         }
 
         
-        if(scrollYPos > 1000 && this.banderaLinea2 == true){
+        if(scrollYPos > 900 && this.banderaLinea2 == true){
 
           this.banderaLinea2 = false;
 
@@ -342,7 +342,7 @@ export class SolucionesComponent implements OnInit {
             animation9.addEventListener('DOMLoaded', () => {
             });
       
-            animation9.setSpeed(0.2);
+            animation9.setSpeed(0.183333);
       
           }
 
@@ -353,12 +353,12 @@ export class SolucionesComponent implements OnInit {
             animation8.addEventListener('DOMLoaded', () => {
             });
       
-            animation8.setSpeed(0.2);
+            animation8.setSpeed(0.183333);
       
           }
         }
 
-        if(scrollYPos > 1800 && this.banderaLinea3 == true){
+        if(scrollYPos > 1000 && this.banderaLinea3 == true){
 
 
           this.banderaLinea3 = false;
@@ -370,7 +370,7 @@ export class SolucionesComponent implements OnInit {
             animation7.addEventListener('DOMLoaded', () => {
             });
       
-            animation7.setSpeed(0.5);
+            animation7.setSpeed(0.183333);
       
           }
 
