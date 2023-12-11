@@ -514,6 +514,16 @@ export class ModelosComponent implements OnInit {
 
           this.banderaLinea4 = false;
 
+          const animationHacemos = document.getElementById('titulohacemos');
+
+          if (animationHacemos) {
+            const animation3 = lottie.loadAnimation({ container: animationHacemos, renderer: 'svg', loop: false, autoplay: true, path: 'assets/imagenes/iconosblog/tituloseccionmodelo.json' });
+            animation3.addEventListener('DOMLoaded', () => {
+            });
+      
+            animation3.setSpeed(0.281111); 
+          }
+
           const animationConexion = document.getElementById('conexion');
 
           if (animationConexion) {
