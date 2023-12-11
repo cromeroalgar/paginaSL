@@ -926,6 +926,19 @@ top: 40%;
     
   }
 
+  .cartasComentarios2 {
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    border-bottom-left-radius: 15px; /* Bordes redondeados */
+    border-top-right-radius: 15px; /* Bordes redondeados */
+    border-bottom-right-radius: 15px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    -webkit-box-shadow: 0px 0px 9px 1px rgb(198, 197, 197);
+    -moz-box-shadow: 0px 0px 9px 1px rgb(198, 197, 197);
+    box-shadow: 0px 0px 9px 1px rgb(198, 197, 197);
+    position: relative;
+    
+  }
+
   /* Estilos para el logotipo */
   .logo {
     position: absolute;
