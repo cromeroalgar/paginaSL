@@ -94,7 +94,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorCultura(){
     this.divStyleCultura = {
-      'opacity': '0.5'
+      'opacity': '0.8'
     };
   }
 
@@ -105,7 +105,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorInnovacion(){
     this.divStyleInnovacion = {
-      'opacity': '0.5'
+      'opacity': '0.8'
     };
   }
 
@@ -116,7 +116,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorPosicionamiento(){
     this.divStylePosicionamiento = {
-      'opacity': '0.5'
+      'opacity': '0.8'
     };
   }
 
@@ -127,7 +127,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorConexion(){
     this.divStyleConexion = {
-      'opacity': '0.5'
+      'opacity': '0.8'
     };
   }
 
@@ -661,6 +661,8 @@ export class ModelosComponent implements OnInit {
 
   banderaLinea3 = true;
 
+  banderaLinea5 = true;
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event) {
         // Obtener la posición actual del scroll en el eje Y
@@ -706,9 +708,9 @@ export class ModelosComponent implements OnInit {
 
         }
 
-        if (scrollYPos > 1005 && this.banderaLinea4 == true){
-
-          this.banderaLinea4 = false;
+        if(scrollYPos > 200 && this.banderaLinea5 == true)
+        {
+          this.banderaLinea5 = false;
 
           const animationHacemos = document.getElementById('titulohacemos');
 
@@ -719,6 +721,13 @@ export class ModelosComponent implements OnInit {
       
             animation3.setSpeed(0.281111); 
           }
+        }
+      
+
+
+        if (scrollYPos > 1005 && this.banderaLinea4 == true){
+
+          this.banderaLinea4 = false;
 
           const animationConexion = document.getElementById('conexion');
 
