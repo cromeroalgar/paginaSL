@@ -91,7 +91,8 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorBuho(){
     this.divStyleBuho = {
-      'filter': 'grayscale(100%)'
+      'filter': 'grayscale(100%)',
+      'opacity': '0.5'
     };
   }
 
