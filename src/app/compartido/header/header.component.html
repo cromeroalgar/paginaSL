@@ -19,21 +19,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav" >
       
-                <li class="nav-item active ">
-                  <a  routerLinkActive="activo shadow-none" style="background-color: black; color: white; box-shadow: none;"  class="btn" [routerLink]="['/nosotros']" data-toggle="collapse" data-target=".navbar-collapse.show">Nosotros</a>
+                <li class="nav-item active " (click)="toggleUnderline()">
+                  <a  routerLinkActive="activo shadow-none" style="background-color: black; color: white; box-shadow: none;"  class="btn" [routerLink]="['/nosotros']" data-toggle="collapse" data-target=".navbar-collapse.show"><p [ngClass]="{'underline': !isUnderlined, 'clicked': isUnderlined}">Nosotros</p> </a>
 
                 </li>
                 
-                <li class="nav-item active ">
-                  <a  routerLinkActive="activo shadow-none" style="background-color: black; color: white; box-shadow: none;"  class="btn" [routerLink]="['/modelos']" data-toggle="collapse" data-target=".navbar-collapse.show">Modelos</a>
+                <li class="nav-item active " (click)="toggleUnderlineModel()">
+                  <a  routerLinkActive="activo shadow-none" style="background-color: black; color: white; box-shadow: none;"  class="btn" [routerLink]="['/modelos']" data-toggle="collapse" data-target=".navbar-collapse.show"><p [ngClass]="{'underlineModel': !isUnderlinedModel, 'clickedModel': isUnderlinedModel}">Modelos</p></a>
                 </li>
               
-                <li class="nav-item active ">
-                  <a  routerLinkActive="activo shadow-none" style="background-color: black; color: white; box-shadow: none;"  class="btn" [routerLink]="['/soluciones']" data-toggle="collapse" data-target=".navbar-collapse.show">Soluciones</a>
+                <li class="nav-item active " (click)="toggleUnderlineSoluciones()">
+                  <a  routerLinkActive="activo shadow-none" style="background-color: black; color: white; box-shadow: none;"  class="btn" [routerLink]="['/soluciones']" data-toggle="collapse" data-target=".navbar-collapse.show"><p [ngClass]="{'underlineSoluciones': !isUnderlinedSoluciones, 'clickedSoluciones': isUnderlinedSoluciones}">Soluciones</p></a>
                 </li>
 
-                <li class="nav-item active ">
-                  <a  routerLinkActive="activo shadow-none" style="background-color: black; color: white; box-shadow: none;"  class="btn" [routerLink]="['/blog']" data-toggle="collapse" data-target=".navbar-collapse.show">Blog</a>
+                <li class="nav-item active " (click)="toggleUnderlineBlog()">
+                  <a  routerLinkActive="activo shadow-none" style="background-color: black; color: white; box-shadow: none;"  class="btn" [routerLink]="['/blog']" data-toggle="collapse" data-target=".navbar-collapse.show"><p [ngClass]="{'underlineBlog': !isUnderlinedBlog, 'clickedBlog': isUnderlinedBlog}">Blog</p></a>
                 </li>
 
               </ul>
