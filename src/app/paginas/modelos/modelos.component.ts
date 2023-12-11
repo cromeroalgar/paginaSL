@@ -69,11 +69,146 @@ export class ModelosComponent implements OnInit {
   @ViewChild('panama') panama!: ElementRef;
   @ViewChild('honduras') honduras!: ElementRef;
 
+  divStyleBuho: any = {}; 
+  divStyleFlor: any = {}; 
+  divStyleCorona: any = {}; 
+  divStyleMedalla: any = {}; 
+  divStyleCasa: any = {}; 
+  divStyleBufon: any = {}; 
+  divStyleCorazon: any = {}; 
+  divStyleCorazones: any = {}; 
+  divStyleMago: any = {}; 
+  divStyleManoEstrella: any = {}; 
+  divStylePaisaje: any = {}; 
+
   constructor(private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
  
      
    
   }
+
+  cambiarColorBuho(){
+    this.divStyleBuho = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloBuho(){
+    this.divStyleBuho = {
+    };
+  }
+
+  cambiarColorFlor(){
+    this.divStyleFlor = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloFlor(){
+    this.divStyleFlor = {
+    };
+  }
+
+  cambiarColorPaisaje(){
+    this.divStylePaisaje = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloPaisaje(){
+    this.divStylePaisaje = {
+    };
+  }
+
+  cambiarColorMedalla(){
+    this.divStyleMedalla = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloMedalla(){
+    this.divStyleMedalla = {
+    };
+  }
+
+  cambiarColorMago(){
+    this.divStyleMago = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloMago(){
+    this.divStyleMago = {
+    };
+  }
+
+  cambiarColorBufon(){
+    this.divStyleBufon = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloBufon(){
+    this.divStyleBufon = {
+    };
+  }
+
+  cambiarColorManoEstrella(){
+    this.divStyleManoEstrella = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloManoEstrella(){
+    this.divStyleManoEstrella = {
+    };
+  }
+
+  cambiarColorCasa(){
+    this.divStyleCasa = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloCasa(){
+    this.divStyleCasa = {
+    };
+  }
+
+  cambiarColorCorazones(){
+    this.divStyleCorazones = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloCorazones(){
+    this.divStyleCorazones = {
+    };
+  }
+
+  cambiarColorCorazon(){
+    this.divStyleCorazon = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloCorazon(){
+    this.divStyleCorazon = {
+    };
+  }
+
+  cambiarColorCorona(){
+    this.divStyleCorona = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloCorona(){
+    this.divStyleCorona = {
+    };
+  }
+
+
 
   resurso21(){
     this.mostrarRecurso21Info = !this.mostrarRecurso21Info;

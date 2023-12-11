@@ -271,13 +271,13 @@
 
             <div class="texto-superpuesto7">
 
-              <span style="width: 280px;  margin-top: -143px; margin-right: -147px;" class="logo" id="flor" alt="Logotipo"></span>
+              <span [ngStyle]="divStyleFlor" style="width: 280px;  margin-top: -143px; margin-right: -147px;" class="logo" id="flor" alt="Logotipo"></span>
 
   
               </div>
 
               <span style="cursor: pointer; z-index: 4; position: absolute; top: 9%;
-                left: 53.3%; color: transparent;" (click)="resurso30()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                left: 53.3%; color: transparent;" (mouseover)="cambiarColorFlor()" (mouseout)="removerEstiloFlor()" (click)="resurso30()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
 
                 <div class="texto-superpuesto7" style="z-index: 3; margin-top: -0.1%; margin-left: 5.6%;" *ngIf="mostrarRecurso30Info">
 
@@ -287,13 +287,13 @@
 
               <div class="texto-superpuesto8">
 
-                <span style="width: 280px;  margin-top: -144px; margin-right: -146px;" class="logo" id="buho" alt="Logotipo"></span>
+                <span [ngStyle]="divStyleBuho" style="width: 280px;  margin-top: -144px; margin-right: -146px;" class="logo" id="buho" alt="Logotipo"></span>
 
     
                 </div>
 
                 <span style="cursor: pointer; z-index: 4; position: absolute; top: 19%;
-                left: 60%; color: transparent;" (click)="resurso31()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                left: 60%; color: transparent;" (mouseover)="cambiarColorBuho()" (mouseout)="removerEstiloBuho()"  (click)="resurso31()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
 
                  <div class="texto-superpuesto8" *ngIf="mostrarRecurso31Info">
 
@@ -303,12 +303,12 @@
 
                 <div class="texto-superpuesto9">
 
-                  <span style="width: 280px;  margin-top: -144px; margin-right: -146px;" class="logo" id="paisaje" alt="Logotipo"></span>
+                  <span [ngStyle]="divStylePaisaje" style="width: 280px;  margin-top: -144px; margin-right: -146px;" class="logo" id="paisaje" alt="Logotipo"></span>
       
                   </div>
 
                   <span style="cursor: pointer; z-index: 3; position: absolute; top: 37%;
-                  left: 65%; color: transparent;" (click)="resurso32()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                  left: 65%; color: transparent;" (click)="resurso32()" (mouseover)="cambiarColorPaisaje()" (mouseout)="removerEstiloPaisaje()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
 
                    <div class="texto-superpuesto9" *ngIf="mostrarRecurso32Info">
 
@@ -318,12 +318,12 @@
 
                   <div class="texto-superpuesto10">
 
-                    <span style="width: 280px;  margin-top: -147px; margin-right: -145px;" class="logo" id="medalla" alt="Logotipo"></span>
+                    <span [ngStyle]="divStyleMedalla" style="width: 280px;  margin-top: -147px; margin-right: -145px;" class="logo" id="medalla" alt="Logotipo"></span>
         
                     </div>
 
                     <span style="cursor: pointer; z-index: 3; position: absolute; top: 58%;
-                  left: 65%; color: transparent;" (click)="resurso33()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                  left: 65%; color: transparent;" (click)="resurso33()" (mouseover)="cambiarColorMedalla()" (mouseout)="removerEstiloMedalla()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
 
                   <div class="texto-superpuesto10" *ngIf="mostrarRecurso33Info">
 
@@ -333,12 +333,12 @@
 
                     <div class="texto-superpuesto11">
 
-                      <span style="width: 280px;  margin-top: -148px; margin-right: -145px;" class="logo" id="mago" alt="Logotipo"></span>
+                      <span [ngStyle]="divStyleMago" style="width: 280px;  margin-top: -148px; margin-right: -145px;" class="logo" id="mago" alt="Logotipo"></span>
           
                       </div>
 
                       <span style="cursor: pointer; z-index: 3; position: absolute; top: 74%;
-                      left: 60%;" (click)="resurso34()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                      left: 60%;" (click)="resurso34()" (mouseover)="cambiarColorMago()" (mouseout)="removerEstiloMago()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
 
                       <div class="texto-superpuesto11" *ngIf="mostrarRecurso34Info">
 
@@ -379,13 +379,13 @@
 
                           <div class="texto-superpuesto14">
 
-                            <span style="width: 279px;  margin-top: -144px; margin-right: -142px;" class="logo" id="bufon" alt="Logotipo"></span>
+                            <span [ngStyle]="divStyleBufon" style="width: 279px;  margin-top: -144px; margin-right: -142px;" class="logo" id="bufon" alt="Logotipo"></span>
                 
                             </div>
 
                             
                           <span style="cursor: pointer; z-index: 3; position: absolute; top: 73%;
-                          left: 38%;" (click)="resurso37()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                          left: 38%;" (click)="resurso37()" (mouseover)="cambiarColorBufon()" (mouseout)="removerEstiloBufon()">&nbsp; &nbsp; &nbsp; &nbsp;</span>
 
                           <div class="texto-superpuesto14" *ngIf="mostrarRecurso37Info">
 
