@@ -80,12 +80,14 @@ export class ModelosComponent implements OnInit {
   divStyleMago: any = {}; 
   divStyleManoEstrella: any = {}; 
   divStylePaisaje: any = {}; 
+  divStyleBombillo: any = {}; 
 
   constructor(private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
  
      
    
   }
+
 
   cambiarColorBuho(){
     this.divStyleBuho = {
@@ -95,6 +97,17 @@ export class ModelosComponent implements OnInit {
 
   removerEstiloBuho(){
     this.divStyleBuho = {
+    };
+  }
+
+  cambiarColorBombillo(){
+    this.divStyleBombillo = {
+      'filter': 'grayscale(100%)'
+    };
+  }
+
+  removerEstiloBombillo(){
+    this.divStyleBombillo = {
     };
   }
 
