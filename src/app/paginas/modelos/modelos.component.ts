@@ -85,11 +85,83 @@ export class ModelosComponent implements OnInit {
   divStylePosicionamiento: any = {}; 
   divStyleInnovacion: any = {}; 
   divStyleCultura: any = {}; 
+  divStyleGamificacion: any = {}; 
+  divStyleSocial: any = {}; 
+  divStyleScp: any = {}; 
+  divStyleSombreros: any = {}; 
+  divStyleRastreo: any = {}; 
+  divStyleRealidad: any = {}; 
 
   constructor(private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
  
      
    
+  }
+
+  cambiarColorRealidad(){
+    this.divStyleRealidad = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloRealidad(){
+    this.divStyleRealidad = {
+    };
+  }
+
+  cambiarColorRastreo(){
+    this.divStyleRastreo = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloRastreo(){
+    this.divStyleRastreo = {
+    };
+  }
+
+  cambiarColorSombreros(){
+    this.divStyleSombreros = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloSombreros(){
+    this.divStyleSombreros = {
+    };
+  }
+
+  cambiarColorScp(){
+    this.divStyleScp = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloScp(){
+    this.divStyleScp = {
+    };
+  }
+
+  cambiarColorGamificacion(){
+    this.divStyleGamificacion = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloGamificacion(){
+    this.divStyleGamificacion = {
+    };
+  }
+
+  cambiarColorSocial(){
+    this.divStyleSocial = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloSocial(){
+    this.divStyleSocial = {
+    };
   }
 
   cambiarColorCultura(){
