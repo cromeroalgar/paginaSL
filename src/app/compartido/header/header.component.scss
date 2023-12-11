@@ -1,4 +1,38 @@
+p {
+    cursor: pointer;
+  }
+  
+  .underline {
+    text-decoration: none;
+  }
+  
+  .clicked {
+    text-decoration: underline;
+  }
 
+  .underlineModel {
+    text-decoration: none;
+  }
+  
+  .clickedModel {
+    text-decoration: underline;
+  }
+
+  .underlineSoluciones {
+    text-decoration: none;
+  }
+  
+  .clickedSoluciones {
+    text-decoration: underline;
+  }
+
+  .underlineBlog {
+    text-decoration: none;
+  }
+  
+  .clickedBlog {
+    text-decoration: underline;
+  }
 
 .scroll-down{ 
     transform: translate3d(0 ,-51px, 0);
