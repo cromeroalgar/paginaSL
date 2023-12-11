@@ -81,11 +81,59 @@ export class ModelosComponent implements OnInit {
   divStyleManoEstrella: any = {}; 
   divStylePaisaje: any = {}; 
   divStyleBombillo: any = {}; 
+  divStyleConexion: any = {}; 
+  divStylePosicionamiento: any = {}; 
+  divStyleInnovacion: any = {}; 
+  divStyleCultura: any = {}; 
 
   constructor(private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
  
      
    
+  }
+
+  cambiarColorCultura(){
+    this.divStyleCultura = {
+      'opacity': '0.5'
+    };
+  }
+
+  removerEstiloCultura(){
+    this.divStyleCultura = {
+    };
+  }
+
+  cambiarColorInnovacion(){
+    this.divStyleInnovacion = {
+      'opacity': '0.5'
+    };
+  }
+
+  removerEstiloInnovacion(){
+    this.divStyleInnovacion = {
+    };
+  }
+
+  cambiarColorPosicionamiento(){
+    this.divStylePosicionamiento = {
+      'opacity': '0.5'
+    };
+  }
+
+  removerEstiloPosicionamiento(){
+    this.divStylePosicionamiento = {
+    };
+  }
+
+  cambiarColorConexion(){
+    this.divStyleConexion = {
+      'opacity': '0.5'
+    };
+  }
+
+  removerEstiloConexion(){
+    this.divStyleConexion = {
+    };
   }
 
 
@@ -102,7 +150,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorBombillo(){
     this.divStyleBombillo = {
-      'filter': 'grayscale(100%)'
+      'opacity': '0'
     };
   }
 
@@ -113,7 +161,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorFlor(){
     this.divStyleFlor = {
-      'filter': 'grayscale(100%)'
+      'opacity': '0'
     };
   }
 
@@ -124,7 +172,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorPaisaje(){
     this.divStylePaisaje = {
-      'filter': 'grayscale(100%)'
+      'opacity': '0'
     };
   }
 
@@ -135,7 +183,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorMedalla(){
     this.divStyleMedalla = {
-      'filter': 'grayscale(100%)'
+      'opacity': '0'
     };
   }
 
@@ -146,7 +194,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorMago(){
     this.divStyleMago = {
-      'filter': 'grayscale(100%)'
+      'opacity': '0'
     };
   }
 
@@ -157,7 +205,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorBufon(){
     this.divStyleBufon = {
-      'filter': 'grayscale(100%)'
+      'opacity': '0'
     };
   }
 
@@ -168,7 +216,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorManoEstrella(){
     this.divStyleManoEstrella = {
-      'filter': 'grayscale(100%)'
+      'opacity': '0'
     };
   }
 
@@ -179,7 +227,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorCasa(){
     this.divStyleCasa = {
-      'filter': 'grayscale(100%)'
+      'opacity': '0'
     };
   }
 
@@ -190,7 +238,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorCorazones(){
     this.divStyleCorazones = {
-      'filter': 'grayscale(100%)'
+      'opacity': '0'
     };
   }
 
@@ -201,7 +249,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorCorazon(){
     this.divStyleCorazon = {
-      'filter': 'grayscale(100%)'
+      'opacity': '0'
     };
   }
 
@@ -212,7 +260,7 @@ export class ModelosComponent implements OnInit {
 
   cambiarColorCorona(){
     this.divStyleCorona = {
-      'filter': 'grayscale(100%)'
+      'opacity': '0'
     };
   }
 
