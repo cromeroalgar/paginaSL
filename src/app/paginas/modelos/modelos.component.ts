@@ -85,11 +85,83 @@ export class ModelosComponent implements OnInit {
   divStylePosicionamiento: any = {}; 
   divStyleInnovacion: any = {}; 
   divStyleCultura: any = {}; 
+  divStyleGamificacion: any = {}; 
+  divStyleSocial: any = {}; 
+  divStyleScp: any = {}; 
+  divStyleSombreros: any = {}; 
+  divStyleRastreo: any = {}; 
+  divStyleRealidad: any = {}; 
 
   constructor(private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
  
      
    
+  }
+
+  cambiarColorRealidad(){
+    this.divStyleRealidad = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloRealidad(){
+    this.divStyleRealidad = {
+    };
+  }
+
+  cambiarColorRastreo(){
+    this.divStyleRastreo = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloRastreo(){
+    this.divStyleRastreo = {
+    };
+  }
+
+  cambiarColorSombreros(){
+    this.divStyleSombreros = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloSombreros(){
+    this.divStyleSombreros = {
+    };
+  }
+
+  cambiarColorScp(){
+    this.divStyleScp = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloScp(){
+    this.divStyleScp = {
+    };
+  }
+
+  cambiarColorGamificacion(){
+    this.divStyleGamificacion = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloGamificacion(){
+    this.divStyleGamificacion = {
+    };
+  }
+
+  cambiarColorSocial(){
+    this.divStyleSocial = {
+      'transform': 'scale(1.3)'
+    };
+  }
+
+  removerEstiloSocial(){
+    this.divStyleSocial = {
+    };
   }
 
   cambiarColorCultura(){
@@ -662,6 +734,7 @@ export class ModelosComponent implements OnInit {
   banderaLinea3 = true;
 
   banderaLinea5 = true;
+  banderaLinea8 = true;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event) {
@@ -721,6 +794,8 @@ export class ModelosComponent implements OnInit {
       
             animation3.setSpeed(0.281111); 
           }
+
+      
         }
       
 
@@ -728,6 +803,8 @@ export class ModelosComponent implements OnInit {
         if (scrollYPos > 1005 && this.banderaLinea4 == true){
 
           this.banderaLinea4 = false;
+
+       
 
           const animationConexion = document.getElementById('conexion');
 
@@ -771,10 +848,29 @@ export class ModelosComponent implements OnInit {
 
         }
 
+
+        if (scrollYPos > 1100 && this.banderaLinea8 == true){
+          this.banderaLinea8 = false;
+
+        const animationlinea7 = document.getElementById('lineaTexto7');
+
+        if (animationlinea7) {
+          const animation8 = lottie.loadAnimation({ container: animationlinea7, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Iconosinicio/lineaRoja.json' });
+          animation8.addEventListener('DOMLoaded', () => {
+          });
+    
+          animation8.setSpeed(0.159999);
+    
+        }
+
+      }
+
         
         if(scrollYPos > 1805 && this.banderaLinea2 == true){
 
           this.banderaLinea2 = false;
+
+       
 
           const animationBombillo = document.getElementById('bombillo');
 

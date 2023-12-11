@@ -145,6 +145,10 @@
           
           <strong><p id="titulohacemos" class="text-center animate-text delay-1" style="width: 300px; margin-top: -80px; margin-bottom: -60px; margin-left: 400px;"></p></strong></div>
   
+
+          <p id="lineaTexto7" style="z-index: 7; position: absolute;width: 17%; margin-left: 42%; margin-top: 1%; display: block;"> </p>
+
+
        </div>
 
 
@@ -595,45 +599,45 @@
 
         
 
-            <div class="texto-superpuestoG1" id="resurso21" >
+            <div class="texto-superpuestoG1" id="resurso21" (mouseover)="cambiarColorGamificacion()" (mouseout)="removerEstiloGamificacion()">
 
-              <span style="width: 295px;  margin-top: -153px; margin-right: -153px;" class="logo" id="gamificacion" alt="Logotipo"></span>
+              <span [ngStyle]="divStyleGamificacion" style="cursor: pointer; width: 295px;  margin-top: -153px; margin-right: -153px;" class="logo" id="gamificacion" alt="Logotipo"></span>
                     
   
               </div>
 
           
 
-              <div class="texto-superpuestoG2">
+              <div class="texto-superpuestoG2" (mouseover)="cambiarColorSocial()" (mouseout)="removerEstiloSocial()">
 
-                <span style="width: 295px;  margin-top: -153px; margin-right: -145px;" class="logo" id="social" alt="Logotipo"></span>
+                <span [ngStyle]="divStyleSocial" style="cursor: pointer; width: 295px;  margin-top: -153px; margin-right: -145px;" class="logo" id="social" alt="Logotipo"></span>
     
                 </div>
 
               
 
-                <div class="texto-superpuestoG3">
+                <div class="texto-superpuestoG3" (mouseover)="cambiarColorScp()" (mouseout)="removerEstiloScp()">
 
-                  <span style="width: 295px;  margin-top: -153px; margin-right: -153px;" class="logo" id="scp" alt="Logotipo"></span>
+                  <span [ngStyle]="divStyleScp" style="cursor: pointer; width: 295px;  margin-top: -153px; margin-right: -153px;" class="logo" id="scp" alt="Logotipo"></span>
       
                   </div>
 
-                  <div class="texto-superpuestoG4">
+                  <div class="texto-superpuestoG4" (mouseover)="cambiarColorSombreros()" (mouseout)="removerEstiloSombreros()">
 
-                    <span style="width: 295px;  margin-top: -153px; margin-right: -153px;" class="logo" id="6sombreros" alt="Logotipo"></span>
+                    <span [ngStyle]="divStyleSombreros" style="cursor: pointer; width: 295px;  margin-top: -153px; margin-right: -153px;" class="logo" id="6sombreros" alt="Logotipo"></span>
         
                     </div>
 
                     
-                  <div class="texto-superpuestoG5">
+                  <div class="texto-superpuestoG5" (mouseover)="cambiarColorRastreo()" (mouseout)="removerEstiloRastreo()">
 
-                    <span style="width: 295px;  margin-top: -153px; margin-right: -153px;" class="logo" id="rastreo" alt="Logotipo"></span>
+                    <span [ngStyle]="divStyleRastreo" style="cursor: pointer; width: 295px;  margin-top: -153px; margin-right: -153px;" class="logo" id="rastreo" alt="Logotipo"></span>
         
                     </div>
 
-                    <div class="texto-superpuestoG6">
+                    <div class="texto-superpuestoG6" (mouseover)="cambiarColorRealidad()" (mouseout)="removerEstiloRealidad()">
 
-                      <span style="width: 295px;  margin-top: -153px; margin-right: -161px;" class="logo" id="realidadVirtual" alt="Logotipo"></span>
+                      <span [ngStyle]="divStyleRealidad" style="cursor: pointer; width: 295px;  margin-top: -153px; margin-right: -161px;" class="logo" id="realidadVirtual" alt="Logotipo"></span>
           
                       </div>
 
