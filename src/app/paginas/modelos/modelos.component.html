@@ -160,11 +160,11 @@
             </div>
 
             <span style="cursor: pointer; z-index: 7; position: absolute; margin-top: 60px; margin-left: 290px;
-            " (click)="resurso21()">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            " (click)="resurso21()" (mouseover)="cambiarColorConexion()" (mouseout)="removerEstiloConexion()">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
 
             <div class="texto-superpuesto3 animate-text delay-1" id="resurso21">
 
-              <span style="width: 310px; margin-top: -160px; margin-right: -160px;" class="logo" id="conexion" alt="Logotipo"></span>
+              <span [ngStyle]="divStyleConexion" style="width: 310px; margin-top: -160px; margin-right: -160px;" class="logo" id="conexion" alt="Logotipo"></span>
 
               </div>
 
@@ -177,13 +177,13 @@
                
               
                 <span style="cursor: pointer; z-index: 7; position: absolute; margin-top: 180px; margin-left: 390px;
-                " (click)="resurso22()">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                " (click)="resurso22()" (mouseover)="cambiarColorPosicionamiento()" (mouseout)="removerEstiloPosicionamiento()">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
 
 
               <div class="texto-superpuesto4 animate-text delay-1">
 
 
-                <span style="width: 310px; margin-top: -160px; margin-right: -160px;" class="logo" id="posicionamiento" alt="Logotipo"></span>
+                <span [ngStyle]="divStylePosicionamiento" style="width: 310px; margin-top: -160px; margin-right: -160px;" class="logo" id="posicionamiento" alt="Logotipo"></span>
     
                 </div>
 
@@ -194,13 +194,13 @@
                   </div>
 
                   <span style="cursor: pointer; z-index: 17; position: absolute; margin-top: 310px; margin-left: 400px;
-                  " (click)="resurso23()">&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</span>
+                  " (click)="resurso23()" (mouseover)="cambiarColorInnovacion()" (mouseout)="removerEstiloInnovacion()">&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</span>
 
                 <div class="texto-superpuesto5 animate-text delay-1">
 
                   
 
-                  <span style="width: 310px; margin-top: -160px; margin-right: -160px;" class="logo" id="innovacion" alt="Logotipo"></span>
+                  <span [ngStyle]="divStyleInnovacion" style="width: 310px; margin-top: -160px; margin-right: -160px;" class="logo" id="innovacion" alt="Logotipo"></span>
     
       
                   </div>
@@ -212,12 +212,12 @@
                     </div>
 
                     <span style="cursor: pointer; z-index: 7; position: absolute; margin-top: 410px; margin-left: 280px;
-                    " (click)="resurso24()">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                    " (click)="resurso24()" (mouseover)="cambiarColorCultura()" (mouseout)="removerEstiloCultura()">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
 
                   <div class="texto-superpuesto6 animate-text delay-1">
 
 
-                    <span style="width: 310px; margin-top: -160px; margin-right: -160px;" class="logo" id="cultura" alt="Logotipo"></span>
+                    <span [ngStyle]="divStyleCultura" style="width: 310px; margin-top: -160px; margin-right: -160px;" class="logo" id="cultura" alt="Logotipo"></span>
         
                     </div>
 
