@@ -795,6 +795,10 @@ top: 40%;
     bottom: 0;
     right: 0;
   }
+  .btn.custom-button:active,
+        .btn.custom-button:focus {
+            transform: scale(0.8); /* Escala el botón al 90% del tamaño original */
+        }
 
   .texto-superpuestoTituloBanner{
     background: linear-gradient(to right, #E38520, #DC1A4D);
@@ -829,7 +833,7 @@ top: 40%;
     background: -o-linear-gradient(right, #E38520, #DC1A4D); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, #E38520, #DC1A4D); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #E38520, #DC1A4D); /* Standard syntax */
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     font-weight: bold;
     
@@ -841,7 +845,14 @@ top: 40%;
     left: 0;
     width: 100%;
     height: 100%;
+    background: linear-gradient(to right, #E38520, #DC1A4D);
+    z-index: 10;
+    
 }
+.btn.custom-button.superpuestoejemplo:active,
+        .btn.custom-button.superpuestoejemplo:focus {
+            transform: scale(0.9); /* Escala el botón al 90% del tamaño original */
+        }
 
 .fondoGris {
   width: 500px; /* Ajusta el ancho según sea necesario */
@@ -898,7 +909,7 @@ top: 40%;
   }
 
   .custom-button:hover {
-    background: linear-gradient(to right, #54337b, #c01f56);
+    background: linear-gradient(to right, #DC1A4D, #E38520);
   }
 
 

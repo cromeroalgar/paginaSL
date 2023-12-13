@@ -281,14 +281,14 @@ export class InicioComponent implements OnInit {
   
     if (animationContainer23) {
 
-      timer(0).subscribe(() => {
+      timer(0.1).subscribe(() => {
 
       const animation23 = lottie.loadAnimation({ container: animationContainer23, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/titulomapa.json' });
  
     animation23.addEventListener('DOMLoaded', () => {
     });
 
-    animation23.setSpeed(0.197777);
+    animation23.setSpeed(0.27777);
 
   });
     
