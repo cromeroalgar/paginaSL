@@ -31,8 +31,14 @@ export class HeaderComponent {
   }
 
   toggleUnderlineOff() {
-    this.isUnderlined = false;
+    if (!this.isUnderlinedModel && !this.isUnderlinedSoluciones && !this.isUnderlinedBlog) {
+      this.isUnderlined = false;
+    }
+    this.isUnderlinedModel = false;
+    this.isUnderlinedSoluciones = false;
+    this.isUnderlinedBlog = false;
   }
+  
 
   toggleUnderlineModel() {
     this.isUnderlinedModel = true;
