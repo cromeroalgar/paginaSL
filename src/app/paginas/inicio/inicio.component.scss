@@ -297,6 +297,15 @@
     bottom: 0;
     right: 0;
   }
+
+  .custom-button3 {
+
+    background: linear-gradient(to right, #c01f56, #54337b);
+    border: none;
+    color: white;
+
+  }
+
   .btn.custom-button:active,
         .btn.custom-button:focus {
             transform: scale(0.8); /* Escala el botón al 90% del tamaño original */

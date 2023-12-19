@@ -7,6 +7,7 @@ import { timer } from 'rxjs';
 import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import lottie from 'lottie-web';
+import { ViewportScroller } from '@angular/common';
 
 
 @Component({
@@ -20,6 +21,7 @@ export class InicioComponent implements OnInit {
   
   @ViewChild('videoElement', { static: false }) videoElement?: ElementRef;
   @ViewChild('playButton', { static: false }) playButton?: ElementRef;
+
 
 
   botonEmpresasBlanco: boolean = true;
@@ -48,7 +50,7 @@ export class InicioComponent implements OnInit {
   @ViewChild('panama') panama!: ElementRef;
   @ViewChild('honduras') honduras!: ElementRef;
 
-  constructor(private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
+  constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
  
      
    
@@ -124,6 +126,15 @@ export class InicioComponent implements OnInit {
       this.espacioRojo = true;
     } else {
       this.espacioRojo = false;
+    }
+  }
+
+  scrollToSection(){
+    const sectionToScrollTo = document.getElementById('contacts');
+
+    if (sectionToScrollTo) {
+      // Realiza el desplazamiento suave utilizando el servicio Scroll
+      this.viewportScroller.scrollToAnchor('contacts');
     }
   }
 
