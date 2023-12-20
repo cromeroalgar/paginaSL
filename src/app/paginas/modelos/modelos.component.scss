@@ -795,10 +795,8 @@ top: 40%;
     bottom: 0;
     right: 0;
   }
-  .btn.custom-button:active,
-        .btn.custom-button:focus {
-            transform: scale(0.8); /* Escala el botón al 90% del tamaño original */
-        }
+
+
 
   .texto-superpuestoTituloBanner{
     background: linear-gradient(to right, #E38520, #DC1A4D);
@@ -849,10 +847,7 @@ top: 40%;
     z-index: 10;
     
 }
-.btn.custom-button.superpuestoejemplo:active,
-        .btn.custom-button.superpuestoejemplo:focus {
-            transform: scale(0.9); /* Escala el botón al 90% del tamaño original */
-        }
+
 
 .fondoGris {
   width: 500px; /* Ajusta el ancho según sea necesario */

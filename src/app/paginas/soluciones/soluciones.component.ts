@@ -3,6 +3,7 @@ import { ModalService } from '../../compartido/servicios/modal.service';
 import { FormBuilder } from '@angular/forms';
 import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { timer } from 'rxjs';
+import { ViewportScroller } from '@angular/common';
 
 import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -57,10 +58,37 @@ export class SolucionesComponent implements OnInit {
   @ViewChild('panama') panama!: ElementRef;
   @ViewChild('honduras') honduras!: ElementRef;
 
-  constructor(private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
+  constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
  
      
    
+  }
+
+  scrollToSection(){
+    const sectionToScrollTo = document.getElementById('contacts');
+
+    if (sectionToScrollTo) {
+      const offset = sectionToScrollTo.getBoundingClientRect().top; // Calcula la posición del elemento respecto a la parte superior de la ventana
+      const duration = 300; // Duración del desplazamiento en milisegundos
+      const start = this.viewportScroller.getScrollPosition(); // Posición de inicio
+  
+      let startTime: number;
+  
+      // Función de animación para realizar el desplazamiento suave
+      const animateScroll = (timestamp: number) => {
+        startTime = startTime || timestamp;
+        const progress = timestamp - startTime;
+        const easeInOutQuad = (t: number) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+  
+        this.viewportScroller.scrollToPosition([start[0], easeInOutQuad(progress / duration) * offset + start[1]]);
+  
+        if (progress < duration) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+  
+      requestAnimationFrame(animateScroll);
+    }
   }
 
   mostrarCabeza(){

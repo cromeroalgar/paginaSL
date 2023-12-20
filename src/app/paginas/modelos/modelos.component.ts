@@ -7,7 +7,7 @@ import { timer } from 'rxjs';
 import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import lottie from 'lottie-web';
-
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-modelos',
@@ -92,10 +92,37 @@ export class ModelosComponent implements OnInit {
   divStyleRastreo: any = {}; 
   divStyleRealidad: any = {}; 
 
-  constructor(private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
+  constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
  
      
    
+  }
+
+  scrollToSection(){
+    const sectionToScrollTo = document.getElementById('contacts');
+
+    if (sectionToScrollTo) {
+      const offset = sectionToScrollTo.getBoundingClientRect().top; // Calcula la posición del elemento respecto a la parte superior de la ventana
+      const duration = 300; // Duración del desplazamiento en milisegundos
+      const start = this.viewportScroller.getScrollPosition(); // Posición de inicio
+  
+      let startTime: number;
+  
+      // Función de animación para realizar el desplazamiento suave
+      const animateScroll = (timestamp: number) => {
+        startTime = startTime || timestamp;
+        const progress = timestamp - startTime;
+        const easeInOutQuad = (t: number) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+  
+        this.viewportScroller.scrollToPosition([start[0], easeInOutQuad(progress / duration) * offset + start[1]]);
+  
+        if (progress < duration) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+  
+      requestAnimationFrame(animateScroll);
+    }
   }
 
   cambiarColorRealidad(){
