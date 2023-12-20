@@ -2,6 +2,17 @@
   display: none; /* Estilo CSS para ocultar el div */
 }
 
+ul {
+  list-style-type: none; /* Oculta el marcador de lista predeterminado */
+}
+
+.liModal {
+
+  background: url('/assets/imagenes/RecursosSoluciones/Recurso12.svg') no-repeat left center; /* Ruta de tu imagen */
+  padding-left: 25px; /* Espacio para la imagen */
+  margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+
 .banner {
   
   position: fixed;
