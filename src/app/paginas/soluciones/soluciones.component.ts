@@ -24,6 +24,13 @@ export class SolucionesComponent implements OnInit {
 
 
   botonEmpresasBlanco: boolean = true;
+  botonStrategy: boolean = true;
+
+  botonKnow: boolean = true;
+
+  botonKnowInfo: boolean = false; 
+  
+  botonStrategyInfo: boolean = false;
   botonEmpresasRojo: boolean = false;
   botonEmprendimientosBlanco: boolean = true;
   botonEmprendimientosRojo: boolean = false;
@@ -147,6 +154,37 @@ export class SolucionesComponent implements OnInit {
     } else {
       this.marginTopDiv = '226.5px';
     }
+  }
+
+  ocultarStrategy(){
+this.botonStrategy = false;
+this.botonStrategyInfo = true;
+  }
+
+  cerrarStrategy(){
+
+    
+    this.botonStrategy = true;
+    this.botonStrategyInfo = false;
+
+    this.botonKnow = true;
+    this.botonKnowInfo = false;
+
+  }
+
+  ocultarInfoStrategy(){
+    this.botonStrategy = true;
+    this.botonStrategyInfo = false;
+  }
+
+  ocultarKnow(){
+    this.botonKnow = false;
+    this.botonKnowInfo = true;
+  }
+
+  ocultarInfoKnow(){
+    this.botonKnow = true;
+    this.botonKnowInfo = false;
   }
 
   mostrarInfoEmprendimientos(){
