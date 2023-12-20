@@ -1,6 +1,6 @@
 import { SpinnerModule } from './compartido/spinner/spinner.module';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { HeaderComponent } from './compartido/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
@@ -36,7 +36,8 @@ import { CacheInterceptor } from './compartido/intecerceptors/cache.interceptor'
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi:true},
-    {provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi:true}
+    {provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi:true},
+    provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })

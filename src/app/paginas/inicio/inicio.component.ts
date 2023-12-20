@@ -10,6 +10,7 @@ import lottie from 'lottie-web';
 import { ViewportScroller } from '@angular/common';
 
 
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
@@ -31,6 +32,7 @@ export class InicioComponent implements OnInit {
   infoEmprendimientos: boolean = false;
   infoEmpresas: boolean = false;
   espacioRojo: boolean = true;
+  
 
   marginTopDiv: string = '30px';
 
@@ -133,8 +135,26 @@ export class InicioComponent implements OnInit {
     const sectionToScrollTo = document.getElementById('contacts');
 
     if (sectionToScrollTo) {
-      // Realiza el desplazamiento suave utilizando el servicio Scroll
-      this.viewportScroller.scrollToAnchor('contacts');
+      const offset = sectionToScrollTo.getBoundingClientRect().top; // Calcula la posición del elemento respecto a la parte superior de la ventana
+      const duration = 300; // Duración del desplazamiento en milisegundos
+      const start = this.viewportScroller.getScrollPosition(); // Posición de inicio
+  
+      let startTime: number;
+  
+      // Función de animación para realizar el desplazamiento suave
+      const animateScroll = (timestamp: number) => {
+        startTime = startTime || timestamp;
+        const progress = timestamp - startTime;
+        const easeInOutQuad = (t: number) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+  
+        this.viewportScroller.scrollToPosition([start[0], easeInOutQuad(progress / duration) * offset + start[1]]);
+  
+        if (progress < duration) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+  
+      requestAnimationFrame(animateScroll);
     }
   }
 
