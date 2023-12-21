@@ -1,7 +1,7 @@
 import { CarruselService } from '../../compartido/servicios/carrusel.service';
 import { ModalService } from '../../compartido/servicios/modal.service';
 import { FormBuilder } from '@angular/forms';
-import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { timer } from 'rxjs';
 
 import { Router } from '@angular/router';
@@ -12,7 +12,8 @@ import lottie from 'lottie-web';
 @Component({
   selector: 'app-blog-card',
   templateUrl: './blog-card.component.html',
-  styleUrls: ['./blog-card.component.scss']
+  styleUrls: ['./blog-card.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 

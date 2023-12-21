@@ -1,9 +1,8 @@
 import { CarruselService } from './../../compartido/servicios/carrusel.service';
 import { ModalService } from './../../compartido/servicios/modal.service';
 import { FormBuilder } from '@angular/forms';
-import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { timer } from 'rxjs';
-
 import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import lottie from 'lottie-web';
@@ -14,7 +13,8 @@ import { ViewportScroller } from '@angular/common';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.scss']
+  styleUrls: ['./inicio.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 

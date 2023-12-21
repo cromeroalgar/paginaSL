@@ -1,12 +1,13 @@
 import { ModalService } from './../servicios/modal.service';
-import { Component, HostListener, Inject } from '@angular/core';
+import { Component, HostListener, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   templateUrl: 'header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
   scrolled: boolean = true;

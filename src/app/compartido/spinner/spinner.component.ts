@@ -1,5 +1,5 @@
 import { SpinerService } from './../servicios/spiner.service';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-spinner',
@@ -9,7 +9,8 @@ import { Component } from '@angular/core';
      <h3 class="mt-5 text-secondary zoom">{{texto$ |async}}</h3>
   </div>  
 </div>`,
-  styleUrls: ['./spinner.component.css']
+  styleUrls: ['./spinner.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 
 })
 export class SpinnerComponent {
