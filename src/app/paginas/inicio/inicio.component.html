@@ -14,9 +14,9 @@
 
     <div class="texto-superpuesto subtitleMain" style=" margin-left: -100px;">
 
-        <span style="font-size: 65px;" class="animate-text delay-1">¡HOLA!</span>
-        <p  class="texto2 animate-text delay-2">Te damos la bienvenida a SL</p>
-        <span class="animate-text delay-3">HACEMOS VISIBLE</span>
+        <span style="font-size: 65px; font-family: BebasNeueBold;" class="animate-text delay-1">¡HOLA!</span>
+        <p  class="texto2 animate-text delay-2" style="font-family: BebasNeueBold;">Te damos la bienvenida a SL</p>
+        <span class="animate-text delay-3" style="font-family: BebasNeueBold;">HACEMOS VISIBLE</span>
     
         <p id="titulobanner" class="texto-superpuestoTituloBanner animate-text delay-4" style="margin-top: -50px; margin-left: -10px;"></p>  
   
@@ -179,6 +179,9 @@
         </li>
         <li><a *ngIf="link" href="#" (mouseover)="cambiarL()"><img style="width: 35px;" src="assets/imagenes/iconos/link.svg" alt="Link"></a>
           <a *ngIf="linkColor" href="#" (mouseout)="cambiarLBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/linkColor.svg" alt="Link"></a>
+        </li>
+        <li><a *ngIf="arquetipos" href="#" (mouseover)="cambiarA()"><img style="width: 40px;" src="assets/imagenes/iconos/arquetipos.svg" alt="Link"></a>
+          <a *ngIf="arquetiposColor" href="#" (mouseout)="cambiarABlanco()"><img style="width: 40px;" src="assets/imagenes/iconos/arquetiposColor.svg" alt="Link"></a>
         </li>
         <!-- Añade más iconos de redes sociales si lo deseas -->
       </ul>

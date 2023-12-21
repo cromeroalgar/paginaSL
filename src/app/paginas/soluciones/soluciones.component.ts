@@ -51,6 +51,9 @@ export class SolucionesComponent implements OnInit {
   instagram: boolean = true;
   instagramColor: boolean = false;
 
+  arquetipos: boolean = true;
+  arquetiposColor: boolean = false;
+
   facebook: boolean = true;
   facebookColor: boolean = false;
 
@@ -88,6 +91,15 @@ export class SolucionesComponent implements OnInit {
    
   }
 
+  cambiarA(){
+    this.arquetipos = false;
+    this.arquetiposColor = true;
+  }
+
+  cambiarABlanco(){
+    this.arquetipos = true;
+    this.arquetiposColor = false;
+  }
 
   cambiarE(){
     this.email = false;
