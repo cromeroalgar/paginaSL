@@ -117,13 +117,20 @@
     </div>
 
 
+    
     <div class="banner" #banner style="display: none;">
       <ul class="redes-sociales">
         
         <li><a href="#"><img style="width: 35px;" src="assets/imagenes/iconos/email.svg" alt="email"></a></li>
-        <li><a href="#"><img style="width: 35px;" src="assets/imagenes/iconos/facebook.svg" alt="Facebook"></a></li>
-        <li><a href="#"><img style="width: 35px;" src="assets/imagenes/iconos/instagram.svg" alt="Instagram"></a></li>
-        <li><a href="#"><img style="width: 35px;" src="assets/imagenes/iconos/link.svg" alt="Link"></a></li>
+        <li><a *ngIf="facebook" href="#" (mouseover)="cambiarF()"><img style="width: 35px;" src="assets/imagenes/iconos/facebook.svg" alt="Facebook"></a>
+          <a *ngIf="facebookColor" href="#" (mouseout)="cambiarFBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/facebookColor.svg" alt="Facebook"></a>
+        </li>
+        <li><a *ngIf="instagram" href="#" (mouseover)="cambiarI()"><img style="width: 35px;" src="assets/imagenes/iconos/instagram.svg" alt="Instagram"></a>
+          <a *ngIf="instagramColor" href="#" (mouseout)="cambiarIBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/instagramColor.svg" alt="Instagram"></a>
+        </li>
+        <li><a *ngIf="link" href="#" (mouseover)="cambiarL()"><img style="width: 35px;" src="assets/imagenes/iconos/link.svg" alt="Link"></a>
+          <a *ngIf="linkColor" href="#" (mouseout)="cambiarLBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/linkColor.svg" alt="Link"></a>
+        </li>
         <!-- Añade más iconos de redes sociales si lo deseas -->
       </ul>
     </div>

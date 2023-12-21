@@ -32,6 +32,15 @@ export class InicioComponent implements OnInit {
   infoEmprendimientos: boolean = false;
   infoEmpresas: boolean = false;
   espacioRojo: boolean = true;
+
+  instagram: boolean = true;
+  instagramColor: boolean = false;
+
+  facebook: boolean = true;
+  facebookColor: boolean = false;
+
+  link: boolean = true;
+  linkColor: boolean = false;
   
 
   marginTopDiv: string = '30px';
@@ -57,6 +66,40 @@ export class InicioComponent implements OnInit {
      
    
   }
+
+  
+  cambiarF(){
+    this.facebook = false;
+    this.facebookColor = true;
+  }
+
+  cambiarFBlanco(){
+    this.facebook = true;
+    this.facebookColor = false;
+  }
+
+  
+  cambiarL(){
+    this.link = false;
+    this.linkColor = true;
+  }
+
+  cambiarLBlanco(){
+    this.link = true;
+    this.linkColor = false;
+  }
+
+  
+  cambiarI(){
+    this.instagram = false;
+    this.instagramColor = true;
+  }
+
+  cambiarIBlanco(){
+    this.instagram = true;
+    this.instagramColor = false;
+  }
+
 
  
   mostrarInfoEmpresas(){

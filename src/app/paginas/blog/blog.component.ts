@@ -36,6 +36,15 @@ export class BlogComponent implements OnInit {
   infoKnow: boolean = false;
   infoAlig: boolean = false;
 
+  instagram: boolean = true;
+  instagramColor: boolean = false;
+
+  facebook: boolean = true;
+  facebookColor: boolean = false;
+
+  link: boolean = true;
+  linkColor: boolean = false;
+
   cartaPantalla: boolean = true;
   cartaTuerca: boolean = true;
   cartaCabeza: boolean = true;
@@ -62,6 +71,39 @@ export class BlogComponent implements OnInit {
  
      
    
+  }
+
+  
+  cambiarF(){
+    this.facebook = false;
+    this.facebookColor = true;
+  }
+
+  cambiarFBlanco(){
+    this.facebook = true;
+    this.facebookColor = false;
+  }
+
+  
+  cambiarL(){
+    this.link = false;
+    this.linkColor = true;
+  }
+
+  cambiarLBlanco(){
+    this.link = true;
+    this.linkColor = false;
+  }
+
+  
+  cambiarI(){
+    this.instagram = false;
+    this.instagramColor = true;
+  }
+
+  cambiarIBlanco(){
+    this.instagram = true;
+    this.instagramColor = false;
   }
 
   mostrarCabeza(){
