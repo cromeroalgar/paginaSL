@@ -345,12 +345,12 @@
             
             <div class="col-md-4">
 
-              <div *ngIf="botonEmpresasRojo" class="card plan  cartas " style="padding-top: 20px; padding-bottom: 20px; margin-left: 100px; margin-top: 50px;" id="card_plan_1">
+              <div *ngIf="botonEmpresasRojo" (click)="ocultarInfoEmpresas()" class="card plan  cartas " style="cursor: pointer; padding-top: 20px; padding-bottom: 20px; margin-left: 100px; margin-top: 50px;" id="card_plan_1">
                 <div class="">
                     <span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;" class="miparrafo">Grandes Empresas</span>
                 </div>
 
-                <img class="logo" (click)="ocultarInfoEmpresas()" style="cursor: pointer;width: 25px; padding-top: 7px; padding-right: 5px;" src="assets/imagenes/iconos/flechaazul.svg" alt="Logotipo">
+                <img class="logo"  style="width: 25px; padding-top: 7px; padding-right: 5px;" src="assets/imagenes/iconos/flechaazul.svg" alt="Logotipo">
             </div>
 
 
@@ -360,12 +360,12 @@
             </div>
             </div>
 
-            <div *ngIf="botonEmprendimientosRojo" [style.margin-top]="marginTopDiv" class="card plan  cartas " style="padding-top: 20px; padding-bottom: 20px; margin-left: 100px;" id="card_plan_1">
+            <div (click)="ocultarInfoEmprendimientos()" *ngIf="botonEmprendimientosRojo" [style.margin-top]="marginTopDiv" class="card plan  cartas " style="cursor: pointer; padding-top: 20px; padding-bottom: 20px; margin-left: 100px;" id="card_plan_1">
               <div class="">
                   <span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;" class="miparrafo">Emprendimientos</span>
               </div>
               
-              <img class="logo" (click)="ocultarInfoEmprendimientos()" style="cursor: pointer;width: 25px; padding-top: 7px; padding-right: 5px;" src="assets/imagenes/iconos/flechaazul.svg" alt="Logotipo">
+              <img class="logo" style="width: 25px; padding-top: 7px; padding-right: 5px;" src="assets/imagenes/iconos/flechaazul.svg" alt="Logotipo">
           </div>
 
 
@@ -373,14 +373,14 @@
 
             <div class="col-md-4">
                 
-              <div *ngIf="botonEmpresasBlanco" class="card plan cartas custom-button" style="padding-top: 20px; padding-bottom: 20px; margin-top: 50px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
+              <div (click)="mostrarInfoEmpresas()" *ngIf="botonEmpresasBlanco" class="card plan cartas custom-button" style="cursor: pointer; padding-top: 20px; padding-bottom: 20px; margin-top: 50px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
                 <div class="">
                     <span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;">Grandes Empresas</span>
                 </div>
                 
                 
 
-                <img class="logo" style="width: 30px; padding-top: 13px; padding-right: 5px; cursor: pointer;" (click)="mostrarInfoEmpresas()" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+                <img class="logo" style="width: 30px; padding-top: 13px; padding-right: 5px; " src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
              
             </div>
 
@@ -404,12 +404,12 @@
            
           </div>
 
-            <div *ngIf="botonEmprendimientosBlanco" class="card plan cartas custom-button" style="cursor: pointer;padding-top: 20px; padding-bottom: 20px; margin-top: -20px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
+            <div (click)="mostrarInfoEmprendimientos()" *ngIf="botonEmprendimientosBlanco" class="card plan cartas custom-button" style="cursor: pointer;padding-top: 20px; padding-bottom: 20px; margin-top: -20px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
               <div class="">
                   <span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;">Emprendimientos</span>
               </div>
 
-              <img class="logo" (click)="mostrarInfoEmprendimientos()" style="width: 30px; padding-top: 13px; padding-right: 5px; cursor: pointer;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+              <img class="logo" style="width: 30px; padding-top: 13px; padding-right: 5px;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
            
               
 
@@ -687,7 +687,7 @@
   </div>
 </div>
 
-<div class="modal fade bd-modal-strategy " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="background-color: transparent; margin-top: 150px; overflow: hidden;" aria-hidden="true">
+<div class="modal fade bd-modal-strategy" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="background-color: transparent; margin-top: 150px; overflow: hidden;" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content" style="background-color: transparent; border: none; box-shadow: none;">
    
@@ -697,22 +697,22 @@
           <div class="col-md-12">
             
            
-            <div *ngIf="botonStrategy" class="card plan  cartas " id="card_plan_1">
+            <div (click)="ocultarStrategy()" *ngIf="botonStrategy" style="cursor: pointer;" class="card plan  cartas " id="card_plan_1">
               <div class="">
 
                   <img style="width: 180px; margin-top: -5px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso5Soluciones.svg" alt=""><span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;"></span>
               </div>
 
-              <img class="logo" (click)="ocultarStrategy()" style="cursor: pointer;width: 25px; padding-top: 15px; padding-right: 5px;" src="assets/imagenes/iconos/flechaazul.svg" alt="Logotipo">
+              <img class="logo" style="width: 25px; padding-top: 15px; padding-right: 5px;" src="assets/imagenes/iconos/flechaazul.svg" alt="Logotipo">
           </div>
 
-          <div *ngIf="botonStrategyInfo" class="card plan  cartas " id="card_plan_1">
+          <div (click)="ocultarInfoStrategy()" *ngIf="botonStrategyInfo" class="card plan  cartas " style="cursor: pointer;" id="card_plan_1">
             <div class="">
 
                 <img style="width: 180px; margin-top: -5px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso5Soluciones.svg" alt=""><span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;"></span>
             </div>
 
-            <img class="logo" (click)="ocultarInfoStrategy()" style="cursor: pointer;width: 25px; padding-top: 15px; padding-right: 5px; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+            <img class="logo"  style="width: 25px; padding-top: 15px; padding-right: 5px; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
             
 
             <p style="font-size: 12px;">Lorem ipsummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
@@ -730,22 +730,22 @@
           <div class="col-md-12">
             
            
-            <div *ngIf="botonKnow" class="card plan  cartas " id="card_plan_1">
+            <div (click)="ocultarKnow()" *ngIf="botonKnow" class="card plan  cartas " style="cursor: pointer;" id="card_plan_1">
               <div class="">
 
                   <img style="width: 180px; height: 65px; margin-top: -5px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso6Soluciones.svg" alt=""><span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;"></span>
               </div>
 
-              <img class="logo" (click)="ocultarKnow()" style="cursor: pointer;width: 25px; padding-top: 15px; padding-right: 5px;" src="assets/imagenes/iconos/flechaazul.svg" alt="Logotipo">
+              <img class="logo" style="width: 25px; padding-top: 15px; padding-right: 5px;" src="assets/imagenes/iconos/flechaazul.svg" alt="Logotipo">
           </div>
 
-          <div *ngIf="botonKnowInfo" class="card plan  cartas " id="card_plan_1">
+          <div  (click)="ocultarInfoKnow()" *ngIf="botonKnowInfo" class="card plan  cartas " style="cursor: pointer;" id="card_plan_1">
             <div class="">
 
                 <img style="width: 180px; margin-top: -5px; margin-left: 20px;" src="assets/imagenes/soluciones/Recurso6Soluciones.svg" alt=""><span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;"></span>
             </div>
 
-            <img class="logo" (click)="ocultarInfoKnow()" style="cursor: pointer;width: 25px; padding-top: 15px; padding-right: 5px; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+            <img class="logo" style="width: 25px; padding-top: 15px; padding-right: 5px; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
             
 
             <p style="font-size: 12px;">Lorem ipsummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
@@ -763,13 +763,28 @@
           <div class="col-md-12">
             
            
-            <div  class="card plan  cartas " id="card_plan_1">
+            <div *ngIf="botonCapa" (click)="ocultarCapa()" class="card plan  cartas " style="cursor: pointer;" id="card_plan_1">
               <div class="">
 
                   <img style="width: 180px; height: 60px; margin-top: 2px; margin-left: 20px;" src="assets/imagenes/RecursosSoluciones/Recurso11.svg" alt=""><span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;"></span>
               </div>
 
-              <img class="logo" (click)="ocultarInfoEmpresas()" style="cursor: pointer;width: 25px; padding-top: 15px; padding-right: 5px;" src="assets/imagenes/iconos/flechaazul.svg" alt="Logotipo">
+              <img class="logo" style="width: 25px; padding-top: 15px; padding-right: 5px;" src="assets/imagenes/iconos/flechaazul.svg" alt="Logotipo">
+          </div>
+
+          <div  (click)="ocultarInfoCapa()" *ngIf="botonCapaInfo" class="card plan  cartas " style="cursor: pointer;" id="card_plan_1">
+            <div class="">
+
+                <img style="width: 180px; margin-top: 10.5px; margin-left: 20px;" src="assets/imagenes/RecursosSoluciones/Recurso11.svg" alt=""><span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;"></span>
+            </div>
+
+            <img class="logo" style="width: 25px; padding-top: 15px; padding-right: 5px; background-color: blue;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+            
+
+            <p style="font-size: 12px;">Lorem ipsummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+      
+            <span data-dismiss="modal"  data-toggle="modal" data-target=".bd-modal-capa-info" style="text-align: right; color: blue; cursor: pointer;" >Ver más</span>
+
           </div>
 
           </div>
@@ -837,6 +852,121 @@
   </div>
 </div>
 
+<div class="modal fade bd-modal-capa-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header" style="border: none; margin-bottom: -20px; margin-top: -20px;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"  (click)="cerrarStrategy()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+   
+      <div class="modal-body" style="font-size: 12px; text-align: justify;">
+
+        <div class="row">
+          <div class="col-md-6">
+            <img style="width: 300px; margin-top: -25px; margin-left: 40px; margin-bottom: 20px;" src="assets/imagenes/RecursosSoluciones/Recurso11.svg" alt="">
+           
+          </div>
+          <div class="col-md-2">
+            
+          </div>
+          <div class="col-md-4" style="padding-top: 40px;">
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+           </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-4">
+
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+         
+               </div>
+          <div class="col-md-4">
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+           </div>
+          <div class="col-md-4">
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+         </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+         
+               </div>
+          <div class="col-md-4">
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+           </div>
+          <div class="col-md-4">
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+         </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+         
+               </div>
+          <div class="col-md-4">
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+           </div>
+          <div class="col-md-4">
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+         </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+         
+               </div>
+          <div class="col-md-4">
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+           </div>
+          <div class="col-md-4">
+            <ul>
+              <li><img src="assets/imagenes/RecursosSoluciones/Recurso12.svg" style=" height: 10px; margin-top: -5px;" alt="Icono">  Human True <br> <p style="margin-left: 16px;"> Etnografía en <br> ambientes naturales.</p></li>
+            </ul>
+         </div>
+        </div>
+
+        <!-- Más texto similar -->
+        <!-- Agrega aquí más párrafos con texto largo si deseas -->
+      </div>
+     
+    </div>
+  </div>
+</div>
 
 <div class="modal fade bd-modal-know-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">

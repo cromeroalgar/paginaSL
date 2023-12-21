@@ -351,12 +351,12 @@
             
             <div class="col-md-4">
 
-              <div *ngIf="botonEmpresasRojo" class="card plan  cartas " style="padding-top: 20px; padding-bottom: 20px; margin-left: 100px; margin-top: 50px;" id="card_plan_1">
+              <div (click)="ocultarInfoEmpresas()" *ngIf="botonEmpresasRojo" class="card plan  cartas " style="cursor: pointer; padding-top: 20px; padding-bottom: 20px; margin-left: 100px; margin-top: 50px;" id="card_plan_1">
                 <div class="">
                     <span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;" class="miparrafo">Grandes Empresas</span>
                 </div>
 
-                <img class="logo" (click)="ocultarInfoEmpresas()" style="cursor: pointer;width: 25px; padding-top: 7px; padding-right: 5px;" src="assets/imagenes/iconos/flechaRoja.svg" alt="Logotipo">
+                <img class="logo"  style="width: 25px; padding-top: 7px; padding-right: 5px;" src="assets/imagenes/iconos/flechaRoja.svg" alt="Logotipo">
             </div>
 
 
@@ -366,12 +366,12 @@
             </div>
             </div>
 
-            <div *ngIf="botonEmprendimientosRojo" [style.margin-top]="marginTopDiv" class="card plan  cartas " style="padding-top: 20px; padding-bottom: 20px; margin-left: 100px;" id="card_plan_1">
+            <div (click)="ocultarInfoEmprendimientos()"  *ngIf="botonEmprendimientosRojo" [style.margin-top]="marginTopDiv" class="card plan  cartas " style="cursor: pointer; padding-top: 20px; padding-bottom: 20px; margin-left: 100px;" id="card_plan_1">
               <div class="">
                   <span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;" class="miparrafo">Emprendimientos</span>
               </div>
               
-              <img class="logo" (click)="ocultarInfoEmprendimientos()" style="cursor: pointer;width: 25px; padding-top: 7px; padding-right: 5px;" src="assets/imagenes/iconos/flechaRoja.svg" alt="Logotipo">
+              <img class="logo" style="width: 25px; padding-top: 7px; padding-right: 5px;" src="assets/imagenes/iconos/flechaRoja.svg" alt="Logotipo">
           </div>
 
 
@@ -379,14 +379,14 @@
 
             <div class="col-md-4">
                 
-              <div *ngIf="botonEmpresasBlanco" class="card plan cartas custom-button" style="padding-top: 20px; padding-bottom: 20px; margin-top: 50px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
+              <div *ngIf="botonEmpresasBlanco" class="card plan cartas custom-button" (click)="mostrarInfoEmpresas()" style="cursor: pointer; padding-top: 20px; padding-bottom: 20px; margin-top: 50px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
                 <div class="">
                     <span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;">Grandes Empresas</span>
                 </div>
                 
                 
 
-                <img class="logo" style="width: 30px; padding-top: 13px; padding-right: 5px; cursor: pointer;" (click)="mostrarInfoEmpresas()" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+                <img class="logo" style="width: 30px; padding-top: 13px; padding-right: 5px; "  src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
              
             </div>
 
@@ -410,12 +410,12 @@
            
           </div>
 
-            <div *ngIf="botonEmprendimientosBlanco" class="card plan cartas custom-button" style="cursor: pointer;padding-top: 20px; padding-bottom: 20px; margin-top: -20px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
+            <div (click)="mostrarInfoEmprendimientos()" *ngIf="botonEmprendimientosBlanco" class="card plan cartas custom-button" style="cursor: pointer;padding-top: 20px; padding-bottom: 20px; margin-top: -20px; margin-bottom: 50px; margin-right: 100px;" id="card_plan_1">
               <div class="">
                   <span style="padding-left: 10px; padding-top: 10px; font-family: TransducerRegular; font-size: 15px;">Emprendimientos</span>
               </div>
 
-              <img class="logo" (click)="mostrarInfoEmprendimientos()" style="width: 30px; padding-top: 13px; padding-right: 5px; cursor: pointer;" src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
+              <img class="logo"  style="width: 30px; padding-top: 13px; padding-right: 5px; " src="assets/imagenes/iconos/flechaBlanca.svg" alt="Logotipo">
            
               
 
