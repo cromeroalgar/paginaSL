@@ -1,9 +1,18 @@
+body.modal-open {
+  overflow: hidden;
+}
+
+
 .ocultar {
   display: none; /* Estilo CSS para ocultar el div */
 }
 
 ul {
   list-style-type: none; /* Oculta el marcador de lista predeterminado */
+}
+
+.ulExit{
+  list-style-type: disc; /* Oculta el marcador de lista predeterminado */
 }
 
 .liModal {

@@ -29,6 +29,10 @@ export class SolucionesComponent implements OnInit {
   botonKnow: boolean = true;
 
   botonKnowInfo: boolean = false; 
+
+  botonCapa: boolean = true;
+
+  botonCapaInfo: boolean = false; 
   
   botonStrategyInfo: boolean = false;
   botonEmpresasRojo: boolean = false;
@@ -187,6 +191,16 @@ this.botonStrategyInfo = true;
     this.botonKnowInfo = false;
   }
 
+  ocultarCapa(){
+    this.botonCapa = false;
+    this.botonCapaInfo = true;
+  }
+
+  ocultarInfoCapa(){
+    this.botonCapa = true;
+    this.botonCapaInfo = false;
+  }
+
   mostrarInfoEmprendimientos(){
 
     this.botonEmprendimientosBlanco = false;
@@ -269,6 +283,8 @@ this.botonStrategyInfo = true;
 
     
     window.scrollTo(0, 0);
+
+    
 
     const animationCerebro2 = document.getElementById('pantalla');
 
