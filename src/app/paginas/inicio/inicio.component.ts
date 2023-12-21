@@ -171,6 +171,14 @@ export class InicioComponent implements OnInit {
       });
     }
 
+    const animationContainerOnda = document.getElementById('ondaGris');
+  
+    if (animationContainerOnda) {
+      const animation1 = lottie.loadAnimation({ container: animationContainerOnda, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/ondaGris.json' });
+      animation1.addEventListener('DOMLoaded', () => {
+      });
+    }
+
     const animationContainer2 = document.getElementById('ojo');
   
     if (animationContainer2) {
