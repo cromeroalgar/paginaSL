@@ -54,6 +54,9 @@ export class ModelosComponent implements OnInit {
   instagram: boolean = true;
   instagramColor: boolean = false;
 
+  email: boolean = true;
+  emailColor: boolean = false;
+
   facebook: boolean = true;
   facebookColor: boolean = false;
 
@@ -135,6 +138,16 @@ export class ModelosComponent implements OnInit {
     }
   }
 
+
+  cambiarE(){
+    this.email = false;
+    this.emailColor = true;
+  }
+
+  cambiarEBlanco(){
+    this.email = true;
+    this.emailColor = false;
+  }
   
   cambiarF(){
     this.facebook = false;

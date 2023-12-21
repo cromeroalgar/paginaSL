@@ -121,7 +121,9 @@
     <div class="banner" #banner style="display: none;">
       <ul class="redes-sociales">
         
-        <li><a href="#"><img style="width: 35px;" src="assets/imagenes/iconos/email.svg" alt="email"></a></li>
+        <li style="margin-top: -2px;"><a *ngIf="email" href="#" (mouseover)="cambiarE()"><img style="width: 40px;" src="assets/imagenes/iconos/email.svg" alt="email"></a>
+          <a *ngIf="emailColor" href="#" (mouseout)="cambiarEBlanco()"><img style="width: 40px;" src="assets/imagenes/iconos/emailColor.svg" alt="email"></a>
+        </li>
         <li><a *ngIf="facebook" href="#" (mouseover)="cambiarF()"><img style="width: 35px;" src="assets/imagenes/iconos/facebook.svg" alt="Facebook"></a>
           <a *ngIf="facebookColor" href="#" (mouseout)="cambiarFBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/facebookColor.svg" alt="Facebook"></a>
         </li>

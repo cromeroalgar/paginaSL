@@ -54,6 +54,9 @@ export class SolucionesComponent implements OnInit {
   facebook: boolean = true;
   facebookColor: boolean = false;
 
+  email: boolean = true;
+  emailColor: boolean = false;
+
   link: boolean = true;
   linkColor: boolean = false;
 
@@ -86,6 +89,15 @@ export class SolucionesComponent implements OnInit {
   }
 
 
+  cambiarE(){
+    this.email = false;
+    this.emailColor = true;
+  }
+
+  cambiarEBlanco(){
+    this.email = true;
+    this.emailColor = false;
+  }
   
   cambiarF(){
     this.facebook = false;

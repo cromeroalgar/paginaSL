@@ -36,6 +36,9 @@ export class InicioComponent implements OnInit {
   instagram: boolean = true;
   instagramColor: boolean = false;
 
+  email: boolean = true;
+  emailColor: boolean = false;
+
   facebook: boolean = true;
   facebookColor: boolean = false;
 
@@ -76,6 +79,16 @@ export class InicioComponent implements OnInit {
   cambiarFBlanco(){
     this.facebook = true;
     this.facebookColor = false;
+  }
+
+  cambiarE(){
+    this.email = false;
+    this.emailColor = true;
+  }
+
+  cambiarEBlanco(){
+    this.email = true;
+    this.emailColor = false;
   }
 
   
