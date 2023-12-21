@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit{
     const animationContainerOnda = document.getElementById('ondaGris');
   
     if (animationContainerOnda) {
-      const animation1 = lottie.loadAnimation({ container: animationContainerOnda, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/ondaGris.json' });
+      const animation1 = lottie.loadAnimation({ container: animationContainerOnda, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/OndaColores.json' });
       animation1.addEventListener('DOMLoaded', () => {
       });
     }
