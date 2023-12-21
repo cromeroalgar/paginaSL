@@ -270,6 +270,8 @@ this.botonStrategyInfo = true;
     
     window.scrollTo(0, 0);
 
+    
+
     const animationCerebro2 = document.getElementById('pantalla');
 
     if (animationCerebro2) {
