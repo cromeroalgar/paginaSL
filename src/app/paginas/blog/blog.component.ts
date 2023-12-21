@@ -36,6 +36,9 @@ export class BlogComponent implements OnInit {
   infoKnow: boolean = false;
   infoAlig: boolean = false;
 
+  arquetipos: boolean = true;
+  arquetiposColor: boolean = false;
+
   instagram: boolean = true;
   instagramColor: boolean = false;
 
@@ -85,6 +88,16 @@ export class BlogComponent implements OnInit {
   cambiarEBlanco(){
     this.email = true;
     this.emailColor = false;
+  }
+
+  cambiarA(){
+    this.arquetipos = false;
+    this.arquetiposColor = true;
+  }
+
+  cambiarABlanco(){
+    this.arquetipos = true;
+    this.arquetiposColor = false;
   }
   
   cambiarF(){

@@ -54,6 +54,9 @@ export class ModelosComponent implements OnInit {
   instagram: boolean = true;
   instagramColor: boolean = false;
 
+  arquetipos: boolean = true;
+  arquetiposColor: boolean = false;
+
   email: boolean = true;
   emailColor: boolean = false;
 
@@ -136,6 +139,16 @@ export class ModelosComponent implements OnInit {
   
       requestAnimationFrame(animateScroll);
     }
+  }
+
+  cambiarA(){
+    this.arquetipos = false;
+    this.arquetiposColor = true;
+  }
+
+  cambiarABlanco(){
+    this.arquetipos = true;
+    this.arquetiposColor = false;
   }
 
 
