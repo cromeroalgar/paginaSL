@@ -76,7 +76,7 @@
                       
                   
 
-                      <div data-toggle="modal" data-target=".bd-modal-discovery2" style="cursor: pointer; background: linear-gradient(to right, #588990, #17488F); border: 1px; border-radius: 15px; margin-top: 20px;">
+                      <div data-toggle="modal" data-target=".bd-modal-discovery2" (click)="bloquearScroll()" style="cursor: pointer; background: linear-gradient(to right, #588990, #17488F); border: 1px; border-radius: 15px; margin-top: 20px;">
 
                         <p style="font-size: 30px; line-height: 1; font-family: BebasNeueBold; color: white; padding-top: 10px; padding-bottom: 10px;">DISCOVERY & <br> BUSINESS</p>
                       
@@ -124,7 +124,7 @@
                   <span style="width: 180px; margin-top: 35px; margin-right: 85px;" class="logo" id="tuerca" alt="Logotipo"></span>
                       
                   
-                    <div data-toggle="modal" data-target=".bd-modal-strategy" style="cursor: pointer; background: linear-gradient(to right, #588990, #17488F); border: 1px; border-radius: 15px; margin-top: 20px;">
+                    <div data-toggle="modal" data-target=".bd-modal-strategy" (click)="bloquearScroll()" style="cursor: pointer; background: linear-gradient(to right, #588990, #17488F); border: 1px; border-radius: 15px; margin-top: 20px;">
                     
                     
                     <p style="font-size: 30px; line-height: 1; font-family: BebasNeueBold; color: white; padding-top: 10px; padding-bottom: 10px;">PEOPLE & <br> TRANSFORMATION</p>
@@ -168,7 +168,7 @@
                   <span style="width: 180px; margin-top: 35px; margin-right: 85px;" class="logo" id="cerebro3" alt="Logotipo"></span>
                       
                   
-                  <div data-toggle="modal" data-target=".bd-modal-alig" style="cursor: pointer; background: linear-gradient(to right, #588990, #17488F); border: 1px; border-radius: 15px; margin-top: 20px;">
+                  <div data-toggle="modal" data-target=".bd-modal-alig" (click)="bloquearScroll()" style="cursor: pointer; background: linear-gradient(to right, #588990, #17488F); border: 1px; border-radius: 15px; margin-top: 20px;">
     
 
                   <p style="font-size: 30px; line-height: 1; font-family: BebasNeueBold; padding-top: 10px; padding-bottom: 10px; color: white;">INSPIRATION & <br> PROVOCATION</p>
@@ -541,12 +541,13 @@
 
 </div>
 
-<div class="modal fade bd-modal-alig" style="margin-top: 180px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-modal-alig" style="margin-top: 180px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" 
+data-keyboard="false">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
 
       <div class="modal-header" style="border: none; margin-bottom: -20px; margin-top: -20px;">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="activarScroll()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -596,13 +597,14 @@
   </div>
 </div>
 
-<div class="modal fade bd-modal-alig-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-modal-alig-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" 
+data-keyboard="false">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
       
       <div class="modal-header" style="border: none; margin-bottom: -20px; margin-top: -20px;">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="activarScroll()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -666,7 +668,8 @@
   </div>
 </div>
 
-<div class="modal fade bd-modal-estra-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-modal-estra-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" 
+data-keyboard="false">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
    
@@ -729,12 +732,13 @@
   </div>
 </div>
 
-<div class="modal fade bd-modal-disco-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-modal-disco-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" 
+data-keyboard="false">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
       <div class="modal-header" style="border: none; margin-bottom: -20px; margin-top: -20px;">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="activarScroll()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -798,12 +802,13 @@
   </div>
 </div>
 
-<div class="modal fade bd-modal-strategy" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="background-color: transparent; margin-top: 150px; overflow: hidden;" aria-hidden="true">
+<div class="modal fade bd-modal-strategy" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="background-color: transparent; margin-top: 150px; overflow: hidden;" aria-hidden="true" data-backdrop="static" 
+data-keyboard="false">
   <div class="modal-dialog modal-lg">
     <div class="modal-content" style="background-color: transparent; border: none; box-shadow: none;">
    
       <div class="modal-header" style="border: none; margin-bottom: -20px; margin-top: -20px;">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="activarScroll()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -885,12 +890,13 @@
 </div>
 
 
-<div class="modal fade bd-modal-discovery2" style="margin-top: 180px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-modal-discovery2" style="margin-top: 180px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" 
+data-keyboard="false">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
    
       <div class="modal-header" style="border: none; margin-bottom: -20px; margin-top: -20px;">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="activarScroll()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -940,7 +946,8 @@
   </div>
 </div>
 
-<div class="modal fade bd-modal-str-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-modal-str-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" 
+data-keyboard="false">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
@@ -1039,7 +1046,8 @@
 </div>
 </div>
 
-<div class="modal fade bd-modal-capa-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-modal-capa-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" 
+data-keyboard="false">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
@@ -1138,7 +1146,8 @@
 </div>
 </div>
 
-<div class="modal fade bd-modal-know-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-modal-know-info" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" 
+data-keyboard="false">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
@@ -1251,7 +1260,8 @@
 </div>
 
 
-<div class="modal fade bd-modal-know" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-modal-know" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" 
+data-keyboard="false">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
    

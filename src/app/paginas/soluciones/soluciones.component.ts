@@ -1,7 +1,7 @@
 import { CarruselService } from '../../compartido/servicios/carrusel.service';
 import { ModalService } from '../../compartido/servicios/modal.service';
 import { FormBuilder } from '@angular/forms';
-import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { timer } from 'rxjs';
 import { ViewportScroller } from '@angular/common';
 
@@ -242,6 +242,17 @@ this.botonStrategyInfo = true;
     this.botonKnow = true;
     this.botonKnowInfo = false;
 
+    
+
+  }
+
+  bloquearScroll(){
+      document.body.style.overflowY = 'hidden';
+
+  }
+
+  activarScroll(){
+    document.body.style.overflowY = 'auto';
   }
 
   ocultarInfoStrategy(){
@@ -348,11 +359,10 @@ this.botonStrategyInfo = true;
 
 
   ngOnInit(): void {    
-
-    
+  
     window.scrollTo(0, 0);
 
-    
+      
 
     const animationCerebro2 = document.getElementById('pantalla');
 
